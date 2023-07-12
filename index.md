@@ -4,8 +4,8 @@ layout: homepage
 keywords:
 
 # Hero section
-title: Rapid Analysis
-description: Machine Learning Tools and Integration
+title: Machine Learning Tools
+description: Assisting in integration into your workflow.
 buttons:
     - content: Blog
       url: 'https://robnewport.github.io'
