@@ -7,9 +7,9 @@ keywords:
 title: Rapid Analysis
 description: Machine Learning Tools and Integration
 buttons:
-    - content: Button
-      url: '#'
-      external_url: false
+    - content: Blog
+      url: 'https://robnewport.github.io'
+      external_url: true
     - icon: github
       content: Public Repo
       url: 'https://github.com/rapidanalysis/rapidanalysis'
@@ -24,8 +24,8 @@ author:
 
 # Grid navigation
 grid_navigation:
-    - title: Grid navigation
-      excerpt: Section description
+    - title: API Preview
+      excerpt: Overview of API basics, x-api-key implementation, and code integration.
       cta: Read more
       url: '#'
 ---
