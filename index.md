@@ -4,23 +4,23 @@ layout: homepage
 keywords:
 
 # Hero section
-title: Project name
-description: Project description
+title: Rapid Analysis
+description: Machine Learning Tools and Integration
 buttons:
     - content: Button
       url: '#'
       external_url: false
     - icon: github
-      content: Button with icon
-      url: '#'
+      content: Public Repo
+      url: 'https://github.com/rapidanalysis/rapidanalysis'
       external_url: true
 
 # Author box
 author:
-    title: About Author
+    title: What we do
     title_url: '#'
     external_url: true
-    description: Author description
+    description: Our Tools, SaaS, and API
 
 # Grid navigation
 grid_navigation:
