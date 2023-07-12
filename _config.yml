@@ -4,7 +4,7 @@ doks:
     color_theme: # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
-            text: # Project name
+            text:
             image: true
         nav:
             - item_name: Item 1
@@ -16,8 +16,8 @@ doks:
     footer:
         content:
             logo:
-                text: Rapid Analysis
-                image:
+                text: # Rapid Analysis
+                image: true
             copyright: Copyright &copy; 2023. - Weburban <br>All rights reserved.
         social_list:
             - network_name: facebook
