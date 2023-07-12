@@ -16,18 +16,16 @@ doks:
     footer:
         content:
             logo:
-                text: Project name
+                text: Rapid Analysis
                 image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
+            copyright: Copyright &copy; 2023. - Weburban <br>All rights reserved.
         social_list:
             - network_name: facebook
-              profile_url: '#'
+              profile_url: 'https://www.facebook.com/weburban'
             - network_name: twitter
-              profile_url: '#'
-            - network_name: instagram
-              profile_url: '#'
+              profile_url: 'https://twitter.com/weburban'
             - network_name: youtube
-              profile_url: '#'
+              profile_url: 'https://www.youtube.com/@weburban'
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
