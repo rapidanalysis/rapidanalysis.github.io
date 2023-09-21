@@ -6,6 +6,7 @@ hero:
   name: "RapidAnalysis"
   text: "Machine Learning"
   tagline: API Documentation and Best Practices
+  heroImage: /illustration1.jpg
   actions:
     - theme: brand
       text: Business Cases
