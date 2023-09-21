@@ -27,14 +27,14 @@ features:
   - title: Number Crunching
     icon: 🤓
     details: Analyse numerical data using our various data analysis tools. Examples and use cases will help you find the best fit for your data.
-  - title: Feature D
+  - title: JSON API
     icon: 🦑
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature E
-    icon: 🦧
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature F
+    details: Libraries, frameworks, and code examples for many languages including Node, Swift, and Python.
+  - title: Edge Hardware
+    icon: 🤖
+    details: Open source examples for integration with edge enabled microprocessors including the ESP32, Raspberry Pi Pico, and Arduin Atmega328.
+  - title: Inexpensive pricing
     icon: 🐈
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: `Free beta for developers` with pricing scheduled to be well below other competing products. 
 ---
 
