@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Business Cases
-      link: /markdown-examples
+      link: /business-examples
     - theme: alt
       text: API Examples
       link: /api-examples
