@@ -7,7 +7,7 @@ hero:
   text: "Machine Learning"
   tagline: API Documentation and Best Practices
   image:
-    src: /illustration2.png
+    src: illustration2.png
     alt: RapidAnalysis
   actions:
     - theme: brand
