@@ -8,15 +8,30 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/business-examples' }
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Business Use Cases', link: '/business-examples' },
+          { text: 'API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: 'Processing Documentation',
+        items: [
+          { text: 'Text Processing', link: '/text-processing' },
+          { text: 'Image Processing', link: '/image-processing' },
+          { text: 'Numeric Processing', link: '/numeric-processing' }
+        ]
+      },
+      {
+        text: 'Generation Documentation',
+        items: [
+          { text: 'Text Generation', link: '/text-generation' },
+          { text: 'Image Generation', link: '/image-generation' }
         ]
       }
     ],
