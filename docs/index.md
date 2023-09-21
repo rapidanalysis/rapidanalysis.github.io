@@ -35,6 +35,6 @@ features:
     details: Open source examples for integration with edge enabled microprocessors including the ESP32, Raspberry Pi Pico, and Arduin Atmega328.
   - title: Inexpensive pricing
     icon: 🐈
-    details: `Free beta for developers` with pricing scheduled to be well below other competing products. 
+    details: Free beta for developers with pricing scheduled to be well below other competing products. 
 ---
 
