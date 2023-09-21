@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "RapidAnalysis"
-  text: "Docs and Examples for RapidAnalysis API"
+  text: "API Docs"
   tagline: My great project tagline
   actions:
     - theme: brand

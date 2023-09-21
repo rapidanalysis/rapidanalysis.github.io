@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "RapidAnalysis",
-  description: "Docs and Examples for RapidAnalysis API",
+  description: "API Docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
