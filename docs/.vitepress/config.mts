@@ -20,7 +20,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Processing Documentation',
+        text: 'Processing Docs 🚀',
         items: [
           { text: 'Text Processing', link: '/text-processing' },
           { text: 'Image Processing', link: '/image-processing' },
@@ -28,10 +28,18 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Generation Documentation',
+        text: 'Generation Docs 🦉',
         items: [
           { text: 'Text Generation', link: '/text-generation' },
           { text: 'Image Generation', link: '/image-generation' }
+        ]
+      },
+      {
+        text: 'Edge Hardware 🤖',
+        items: [
+          { text: 'Use Cases', link: '/hardware-use-cases' },
+          { text: 'Hardware Setup', link: '/hardware-setup' },
+          { text: 'Hardware API', link: '/hardware-api' }
         ]
       }
     ],
