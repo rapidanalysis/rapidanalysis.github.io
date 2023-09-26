@@ -2,48 +2,13 @@
 outline: deep
 ---
 
-# Runtime API Examples
+# Getting Started
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+These pages contain code examples for querying the RapidAnalysis API. All queries use JSON in the request body to return a response from the server using POST. 
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+::: details What is an API?
+APIs serve as the bridge that enables seamless communication and data exchange between different software systems, allowing them to work together harmoniously. 
+For more information about what an API can do, please see: https://weburban.com/2023/09/21/what-is-an-api-how-does-it-work/
+:::
 
-```md
-<script setup>
-import { useData } from 'vitepress'
 
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
