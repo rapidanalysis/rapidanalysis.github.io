@@ -44,8 +44,10 @@ request(options, function (error, response) {
 ```
 :::
 
+The API is language agnostic and can be called from any language, including Go Native, and shown below. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
+
 ::: info Go Native code to recognise text in an image
-```go
+```go{29}
 package main
 
 import (
@@ -93,3 +95,43 @@ func main() {
 ```
 :::
 
+Finally, this example shows how the call can be made using a Javascript fetch request. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
+
+```js{4}
+var myHeaders = new Headers();
+myHeaders.append("Accept", "application/json");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("x-api-key", "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx");
+
+var raw = JSON.stringify({
+  "imageUrl": "https://weburban-uploads-raw.s3.ap-southeast-2.amazonaws.com/poster.jpg"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.weburban.com/image/to-text", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+
+The response for a request will be a JSON object. An example of a response is shown below. 
+
+```json
+{
+    "Version": "1.0",
+    "Output": {
+        "text": [
+            "HUMPHREY",
+            "INGRID",
+            "PAUL",
+            "BOGART BERGMAN HENREID"
+        ]
+    }
+}
+```
