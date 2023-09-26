@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Business Cases
-      link: /getting-started.html#business-use-cases
+      link: /business-examples
     - theme: alt
       text: API Examples
       link: /getting-started.html#api-examples
