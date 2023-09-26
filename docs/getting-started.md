@@ -19,6 +19,8 @@ All calls require your own unique secret key, set as `x-api-key` in the request 
 If you want to skip the basics and head straight to implementation, we have Postman documentation here: https://www.postman.com/weburban/workspace/rapidanalysis-api-by-weburban/documentation/303357-92a170b1-f6a6-430c-9b88-a441ab05abf8
 :::
 
+# API Examples
+
 The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
 ::: info Node.js code to recognise text in an image 
@@ -137,3 +139,9 @@ The response from the server will always be a JSON object. An example of a respo
 ```
 
 This JSON response will always contain `Version` and `Output` data. Versions can be targetted for specific legacy algorithms used by the endpoints. Please see detailed documentation for syntax and specifications. 
+
+# Business Use Cases
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
