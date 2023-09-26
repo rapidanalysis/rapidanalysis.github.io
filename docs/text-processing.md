@@ -6,14 +6,14 @@ The following API endpoints perform analysis on text input.
 
 ### Measure text similarity using Hashing Vectorizer for text embeddings
 
-Measure the similarity between `text1` and `text2` as two different paragraphs of text.   
-Method uses Bray-Curtis dissimilarity for analysis. Please see details about this method here: https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity
+Measure the similarity between `text1` and `text2` as two different paragraphs of text. Method uses Bray-Curtis dissimilarity for analysis. Please see details about this method here: https://en.wikipedia.org/wiki/Bray%E2%80%93Curtis_dissimilarity
 
 ::: tip Parameters
-`endpoint` : https://api.weburban.com/text/to-vector
-`n_features` : (int) number of features the paragraphs will be reduced to
-`text1` : (string) the first text paragraph used in the analysis
-`text2` : (string) the second text paragraph used in the analysis
+`endpoint` : https://api.weburban.com/text/to-vector    
+`n_features` : (int) number of features the paragraphs will be reduced.    
+`text1` : (string) the first text paragraph used in the analysis.    
+`text2` : (string) the second text paragraph used in the analysis.    
+:::
 
 Example of how this would be implemented in shown below. 
 
