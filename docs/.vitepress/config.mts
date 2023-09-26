@@ -14,7 +14,7 @@ export default defineConfig({
     footer: {
       message: 'https://rapidanalysis.github.io',
       copyright: 'Copyright © 2023-present Weburban PTY LTD'
-    }
+    },
 
     sidebar: [
       {
