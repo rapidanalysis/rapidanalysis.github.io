@@ -1,4 +1,4 @@
-# Text Processing 
+# Image Processing 
 
 The following API endpoints perform analysis on an image input. 
 
@@ -11,7 +11,7 @@ Analyse and extract the text shown in an image. Text is extracted from an image 
 ::: tip Parameters
 `endpoint` : https://api.weburban.com/image/to-text    
 `response` : either `simple` or `complex`    
-`imageUrl` : the url for the image to be analysed    
+`imageUrl` : the url of the image to be analysed    
 :::
 
 Example of how this would be implemented in shown below. 
@@ -52,3 +52,53 @@ fetch("https://api.weburban.com/image/to-text", requestOptions)
 ```
 :::
 
+***
+
+### Image Colour k-Means
+Colours are extracted using k-means analysis and output as RGB values, with their frequency. This analysis will provide a summary of `k` colours in an image. 
+
+::: tip Parameters
+`endpoint` : https://api.weburban.com/image/to-text    
+`k` : the final number of extracted colours     
+`imageUrl` : the url of the image to be analysed    
+:::
+
+Example of how this would be implemented in shown below. 
+
+::: code-group
+
+```js [curl]
+curl --location 'https://api.weburban.com/image/kmeans-palette' \
+--header 'Accept: application/json' \
+--header 'x-api-key: <API Key>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "k" : 16,
+    "imageUrl" : "https://www.your-website.com/image.jpg"
+}'
+```
+
+```js [Javascript]
+var myHeaders = new Headers();
+myHeaders.append("Accept", "application/json");
+myHeaders.append("x-api-key", "<API Key>");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "k": 16,
+  "imageUrl": "https://www.your-website.com/image.jpg"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.weburban.com/image/kmeans-palette", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+:::
