@@ -104,7 +104,7 @@ myHeaders.append("Content-Type", "application/json");
 myHeaders.append("x-api-key", "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx");
 
 var raw = JSON.stringify({
-  "imageUrl": "https://weburban-uploads-raw.s3.ap-southeast-2.amazonaws.com/poster.jpg"
+  "imageUrl": "https://www.your-website.com/image.jpg"
 });
 
 var requestOptions = {
@@ -120,7 +120,7 @@ fetch("https://api.weburban.com/image/to-text", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-The response for a request will be a JSON object. An example of a response is shown below. 
+The response from the server will always be a JSON object. An example of a response is shown below. 
 
 ```json
 {
@@ -135,3 +135,5 @@ The response for a request will be a JSON object. An example of a response is sh
     }
 }
 ```
+
+This JSON response will always contain `Version` and `Output` data. Versions can be targetted for specific legacy algorithms used by the endpoints. Please see detailed documentation for syntax and specifications. 
