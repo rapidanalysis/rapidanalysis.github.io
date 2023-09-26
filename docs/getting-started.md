@@ -19,9 +19,9 @@ All calls require your own unique secret key, set as `x-api-key` in the request 
 If you want to skip the basics and head straight to implementation, we have Postman documentation here: https://www.postman.com/weburban/workspace/rapidanalysis-api-by-weburban/documentation/303357-92a170b1-f6a6-430c-9b88-a441ab05abf8
 :::
 
-The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note that the `x-api-key` is a placeholder for your real key. 
+The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
-::: tip Node.js Code to detect text in an image
+::: info Node.js code to recognise text in an image 
 ```js{10}
 var request = require('request');
 var options = {
@@ -41,6 +41,55 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
   console.log(response.body);
 });
+```
+:::
+
+::: info Go Native code to recognise text in an image
+```go
+package main
+
+import (
+  "fmt"
+  "strings"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://api.weburban.com/image/to-text"
+  method := "POST"
+
+  payload := strings.NewReader(`{
+    "imageUrl" : "https://www.your-website.com/image.jpg"
+}`)
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  req.Header.Add("Accept", "application/json")
+  req.Header.Add("Content-Type", "application/json")
+  req.Header.Add("x-api-key", "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx")
+
+  res, err := client.Do(req)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  defer res.Body.Close()
+
+  body, err := ioutil.ReadAll(res.Body)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  fmt.Println(string(body))
+}
 ```
 :::
 
