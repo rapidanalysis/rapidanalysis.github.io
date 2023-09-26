@@ -22,7 +22,7 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/getting-started#getting-started' },
           { text: 'API Examples', link: '/getting-started#api-examples' },
-          { text: 'Business Use Cases', link: '/getting-started#business-use-cases' }
+          { text: 'Business Use Cases', link: '/business-examples' }
         ]
       },
       {
