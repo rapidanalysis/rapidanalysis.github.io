@@ -1,7 +1,14 @@
-# Markdown Extension Examples
+# Text Generation 
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+The following API endpoints generate text based on input. 
 
-## Syntax Highlighting
+***
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+### Generate random text
+
+Generate random text.    
+
+::: tip Parameters
+`endpoint` : https://api.weburban.com/text/generate/random    
+`word-count` : (int) number of words`       
+:::
