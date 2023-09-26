@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Business Cases
-      link: /business-examples
+      link: /getting-started.html#business-use-cases
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /getting-started.html#api-examples
 
 features:
   - title: Image Analysis
