@@ -19,3 +19,28 @@ All calls require your own unique secret key, set as `x-api-key` in the request 
 If you want to skip the basics and head straight to implementation, we have Postman documentation here: https://www.postman.com/weburban/workspace/rapidanalysis-api-by-weburban/documentation/303357-92a170b1-f6a6-430c-9b88-a441ab05abf8
 :::
 
+The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note that the `x-api-key` is a placeholder for your real key. 
+
+::: tip Node.js Code to detect text in an image
+```js{10}
+var request = require('request');
+var options = {
+  'method': 'POST',
+  'url': 'https://api.weburban.com/image/to-text',
+  'headers': {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+    'x-api-key': 'xxxxx-xxxxx-xxxxx-xxxxx-xxxxx'
+  },
+  body: JSON.stringify({
+    "imageUrl": "https://www.your-website.com/image.jpg"
+  })
+
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+```
+:::
+
