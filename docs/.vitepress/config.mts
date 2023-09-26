@@ -15,9 +15,9 @@ export default defineConfig({
       {
         text: 'Start Here',
         items: [
-          { text: 'Business Use Cases', link: '/business-examples' },
-          { text: 'API Examples', link: '/api-examples' },
-          { text: 'Getting Started', link: '/getting-started' }
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'API Examples', link: '/getting-started#api-examples' },
+          { text: 'Business Use Cases', link: '/getting-started#business-use-cases' }
         ]
       },
       {
