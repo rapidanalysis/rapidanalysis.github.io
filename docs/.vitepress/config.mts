@@ -3,13 +3,18 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "RapidAnalysis",
-  description: "API",
+  description: "API Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Quick Start', link: '/getting-started' }
+      { text: 'Quick Start', link: '/getting-started#getting-started' }
     ],
+
+    footer: {
+      message: 'https://rapidanalysis.github.io',
+      copyright: 'Copyright © 2023-present Weburban PTY LTD'
+    }
 
     sidebar: [
       {
@@ -46,7 +51,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/rapidanalysis' }
     ]
   }
 })
