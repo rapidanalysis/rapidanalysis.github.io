@@ -11,14 +11,14 @@ Analyse and predict trends using regression by inputting a set of numbers, some 
 ::: tip Parameters
 `endpoint` : https://api.weburban.com/numeric/to-trend    
 `data` : JSON array of numbers`    
-`labels` : Numeric array of numbers as labels
-`predict` : JSON array of numbers used to predict a label
-`regression` : The type of regression which can be `linear` or `logistic`
+`labels` : Numeric array of numbers as labels     
+`predict` : JSON array of numbers used to predict a label     
+`regression` : The type of regression which can be `linear` or `logistic`     
 :::
 
 Example of how this would be implemented in shown below. 
 
-::: info Explain what these numbers in mean
+::: details Explain what these numbers in mean
 In the example below, the data provided are two arbitrary numbers [_a, b_] put together in a set of other arbitrary numbers as the inputs for `data`. Each set of numbers [_a, b_] corresponds with the `label` in order. In this example, _a_ multiplied by _b_ is the label value. The `predict` value of `[[2,7]]` asks the linear regression model to predict the label without knowing how the numbers are related. 
 :::
 
