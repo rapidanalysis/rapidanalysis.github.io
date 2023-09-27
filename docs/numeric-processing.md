@@ -10,7 +10,7 @@ Analyse and predict trends using regression by inputting a set of numbers, some 
 
 ::: tip Parameters
 `endpoint` : https://api.weburban.com/numeric/to-trend    
-`data` : JSON array of numbers`    
+`data` : JSON array of numbers    
 `labels` : Numeric array of numbers as labels     
 `predict` : JSON array of numbers used to predict a label     
 `regression` : The type of regression which can be `linear` or `logistic`     
