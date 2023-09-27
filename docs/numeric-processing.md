@@ -63,3 +63,16 @@ fetch("https://api.weburban.com/text/to-vector", requestOptions)
   .catch(error => console.log('error', error));
 ```
 :::
+
+The output of the request above will produce the following response. Note that the prediction is 14.000000000000004 and not 14. This is because it is _predicting_ the outcome of [_2, 7_] and not doing a multiplication. 
+
+```json
+{
+    "Version": "1.0",
+    "Output": {
+        "regression": "linear",
+        "prediction": 14.000000000000004
+    }
+}
+```
+
