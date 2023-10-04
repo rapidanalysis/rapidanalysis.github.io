@@ -54,7 +54,11 @@ fetch("https://api.weburban.com/generate/text-from-ngram", requestOptions)
 ```
 :::
 
-The output of the request above will produce the following response.  
+The output of the request above will produce the following response.
+
+::: warning Please note!
+Your `text` response will be different to the one shown below because ngrams are random and your text `url` may contain different phrases and words. 
+:::
 
 ```json
 {
