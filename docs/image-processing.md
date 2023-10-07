@@ -52,6 +52,8 @@ fetch("https://api.weburban.com/image/to-predict", requestOptions)
 ```
 :::
 
+![Koala](/koala.jpg)
+
 Example input for [this image](https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg) on Wikipedia would be:
 
 ```
