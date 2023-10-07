@@ -56,7 +56,7 @@ fetch("https://api.weburban.com/image/to-predict", requestOptions)
 
 Example input for [this image](https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg) on Wikipedia would be:
 
-```
+```json
 {
     "Version": "1.0",
     "Output": {
