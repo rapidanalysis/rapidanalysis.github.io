@@ -11,8 +11,8 @@ APIs serve as the bridge that enables seamless communication and data exchange b
 For more information about what an API can do, please see: https://weburban.com/2023/09/21/what-is-an-api-how-does-it-work/
 :::
 
-::: tip
-All calls require your own unique secret key, set as `x-api-key` in the request header. 
+::: tip Sign Up!
+All calls require your own unique secret key, set as `x-api-key` in the request header. You can sign up here: https://d3u9z3nwezsx26.cloudfront.net
 :::
 
 ::: info Skip the Basics
