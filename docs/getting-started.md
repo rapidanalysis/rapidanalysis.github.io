@@ -2,6 +2,14 @@
 outline: deep
 ---
 
+# Register for your API Key
+
+All calls require your own unique secret key, set as `x-api-key` in the request header. You can register for your own private key here: https://d3u9z3nwezsx26.cloudfront.net
+
+::: warning
+None of these calls will work without an API Key. The developer key is always free!
+:::
+
 # Getting Started
 
 These pages contain code examples for querying the RapidAnalysis API. All queries use JSON in the request body to return a response from the server using POST. 
@@ -9,10 +17,6 @@ These pages contain code examples for querying the RapidAnalysis API. All querie
 ::: details What is an API?
 APIs serve as the bridge that enables seamless communication and data exchange between different software systems, allowing them to work together harmoniously. 
 For more information about what an API can do, please see: https://weburban.com/2023/09/21/what-is-an-api-how-does-it-work/
-:::
-
-::: tip Sign Up!
-All calls require your own unique secret key, set as `x-api-key` in the request header. You can sign up here: https://d3u9z3nwezsx26.cloudfront.net
 :::
 
 ::: info Skip the Basics
