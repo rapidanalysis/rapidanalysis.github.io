@@ -20,6 +20,7 @@ export default defineConfig({
       {
         text: 'Start Here',
         items: [
+          { text: 'Register', link: '/getting-started#register-for-your-api-key' },
           { text: 'Getting Started', link: '/getting-started#getting-started' },
           { text: 'API Examples', link: '/getting-started#api-examples' },
           { text: 'Business Use Cases', link: '/business-examples' }
