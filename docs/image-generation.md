@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Image Generation 
 
 The following API endpoints generate images based on input. 

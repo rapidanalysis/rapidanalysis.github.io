@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Numeric Processing 
 
 The following API endpoints perform analysis on numeric input. 

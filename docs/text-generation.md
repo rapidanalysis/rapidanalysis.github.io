@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Text Generation 
 
 The following API endpoints generate text based on input. 

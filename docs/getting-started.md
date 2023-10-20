@@ -2,15 +2,81 @@
 outline: deep
 ---
 
-# Register for your API Key
+<script setup>
+import axios from "axios";
+import { watchEffect } from 'vue';
+import { onMounted } from 'vue';
 
-All calls require your own unique secret key, set as `x-api-key` in the request header. You can register for your own private key here: https://d3u9z3nwezsx26.cloudfront.net
+const logoutUri = "logout?client_id=7mj6g74m7h9q5m127ehtnlo3m0&logout_uri="
+const loginUri = "login?client_id=7mj6g74m7h9q5m127ehtnlo3m0&response_type=token&redirect_uri="
+
+function configureAuthButton(inOrOut) {  
+  var link = "https://rapid.auth.ap-southeast-2.amazoncognito.com/"
+  link = link + inOrOut
+  link = link + encodeURIComponent(window.location.origin)
+  link = link + encodeURIComponent("/getting-started.html")
+  const apiKeyButton = document.getElementById("apiKeyLoginButton");
+  apiKeyButton.href = link
+}
+
+onMounted(() => {
+  const apiKeyButton = document.getElementById("apiKeyLoginButton");
+  apiKeyButton.innerText = "Sign In or Register Here";
+  configureAuthButton(loginUri)
+});
+
+watchEffect(() => {  
+  if (window.location.hash) {    
+    const queryString = window.location.hash.replace('#','?');    
+    const urlParams = new URLSearchParams(queryString);
+    const jwt = urlParams.get('id_token');        
+
+    const config = {
+      headers:{
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }
+
+    const url = "https://p0j19rggqa.execute-api.ap-southeast-2.amazonaws.com/v1/test";
+    const json = JSON.stringify({ "token" : jwt});
+    const data = { 'body' : json }
+
+    axios.post(url, data, config)
+    .then(response => {
+        const jsonApiKey = JSON.parse(response.data.body)
+        const apiKey = jsonApiKey["Output"]["apikey"]        
+        const apiKeyEmail = jsonApiKey["Output"]["email"]        
+        const apiKeyId = document.getElementById("apiKey");
+        const apiKeyButton = document.getElementById("apiKeyLoginButton");        
+        apiKeyId.innerText = "API KEY: " + apiKey;
+        apiKeyButton.innerText = "Sign Out " + apiKeyEmail;
+        configureAuthButton(logoutUri)
+    }).catch(error => console.error(error));
+    } 
+});
+</script>
+<!-- <button @click="callapi">Test Button</button> -->
+
+# Account Settings
+
+### Create an Account and Sign In
+
+New accounts are free and developer accounts will allow you to use the API for 5,000 calls per month. 
+
+<a id="apiKeyLoginButton" data-v-2dba8ca9="" data-v-72cc4481="" style="text-decoration: none" class="VPButton medium brand" href="">Sign In or Register Here</a>
+
+### Your API Key
+
+All calls require your own unique secret key, set as `x-api-key` in the request header. After you Register and Sign In, you will see your API Key below. 
+
+<div style="fontWeight: bold" id='apiKey'>API Key: -</div>
 
 ::: warning
 None of these calls will work without an API Key. The developer key is always free!
 :::
 
-# Getting Started
+## Getting Started
 
 These pages contain code examples for querying the RapidAnalysis API. All queries use JSON in the request body to return a response from the server using POST. 
 
@@ -23,7 +89,7 @@ For more information about what an API can do, please see: https://weburban.com/
 If you want to skip the basics and head straight to implementation, we have Postman documentation here: https://www.postman.com/weburban/workspace/rapidanalysis-api-by-weburban/documentation/303357-92a170b1-f6a6-430c-9b88-a441ab05abf8
 :::
 
-# API Examples
+## API Examples
 
 The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 

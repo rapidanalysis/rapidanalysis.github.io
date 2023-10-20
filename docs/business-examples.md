@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Business Use Cases
 
 The following use cases represent some ideas about how to implement Machine Learning into your workflow. 
@@ -8,7 +12,7 @@ Do you have an idea you want showcased? Let us know: ideas@rapidanalysis.com
 
 ***
 
-### Use Case Title: Advancing Environmental Conservation with Machine Learning API
+### Advancing Environmental Conservation with Machine Learning API
 
 ::: tip Business Context
 An environmentalist or an environmental organization seeks to enhance their conservation efforts, address ecological challenges, and contribute to a more sustainable future. To achieve these goals, they plan to integrate a machine learning API to gather insights, make informed decisions, and drive positive environmental change.
@@ -71,7 +75,7 @@ By implementing a machine learning API, environmentalists can access advanced to
 ***
 
 
-### Use Case Title: Enhancing Restaurant Operations with Machine Learning API
+### Enhancing Restaurant Operations with Machine Learning API
 
 ::: tip Business Context
 A restaurant owner seeks to optimize various aspects of their restaurant operations, improve customer experiences, and increase profitability. To achieve these goals, they plan to integrate a machine learning API to provide data-driven insights and solutions.
@@ -138,7 +142,7 @@ By implementing a machine learning API, the restaurant can streamline operations
 ***
 
 
-### Use Case Title: Personalized Shopping Experience with Machine Learning API
+### Personalized Shopping Experience with Machine Learning API
 
 ::: tip Business Context
 A retail store, either brick-and-mortar or online, aims to enhance the shopping experience for its customers and increase sales. To achieve this, they plan to implement a machine learning API to offer personalized recommendations and optimize various aspects of retail operations.
@@ -203,7 +207,7 @@ By using a machine learning API, the retail business can elevate the shopping ex
 
 ***
 
-### Use Case Title: Enhancing Recruitment Efficiency with Machine Learning API
+### Enhancing Recruitment Efficiency with Machine Learning API
 
 ::: tip Business Context
 A recruitment agency or in-house HR department seeks to streamline and improve its hiring processes. To achieve this, they plan to integrate a machine learning API to assist recruiters in identifying the most qualified candidates for job openings.
@@ -262,7 +266,7 @@ By using a machine learning API in their recruitment processes, recruiters can o
 
 ***
 
-### Use Case Title: Optimizing Plant Growth in a Nursery with Machine Learning API
+### Optimizing Plant Growth in a Nursery with Machine Learning API
 
 ::: tip Business Context
 A nursery specializing in the cultivation and sale of various plant species aims to improve its operations, reduce resource wastage, and enhance the health and growth of plants. To achieve these goals, the nursery plans to implement a machine learning API that can provide intelligent recommendations and insights for plant care and management.

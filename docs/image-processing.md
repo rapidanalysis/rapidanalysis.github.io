@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Image Processing 
 
 The following API endpoints perform analysis on an image input. 

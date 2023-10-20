@@ -1,5 +1,5 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+import { h, watchEffect } from 'vue'
 import Theme from 'vitepress/theme'
 import './style.css'
 
@@ -12,5 +12,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-  }
+  },
+  
 }

@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "RapidAnalysis"
-  text: "Machine Learning"
-  tagline: API Documentation and Best Practices
+  text: "AI Smart Utilities"
+  tagline: API Documentation and Examples (beta)
   image:
     src: /illustration2.png
     alt: RapidAnalysis

@@ -9,5 +9,12 @@
     "docs:dev": "vitepress dev docs --port 8080",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --port 8080"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-vue": "^3.1.29",
+    "@aws-sdk/client-cognito-identity": "^3.428.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.428.0",
+    "aws-sdk": "^2.1473.0",
+    "axios": "^1.5.1"
   }
 }

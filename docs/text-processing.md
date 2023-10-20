@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Text Processing 
 
 The following API endpoints perform analysis on text input. 
