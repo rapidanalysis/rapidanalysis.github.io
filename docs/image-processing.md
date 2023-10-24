@@ -85,7 +85,7 @@ Example input for [this image](https://upload.wikimedia.org/wikipedia/commons/4/
 
 ***
 
-### Recognise and extract text from an image
+### Text Recognition
 
 Analyse and extract the text shown in an image. Text is extracted from an image with a response as `simple` as a list of text or as `complex` as text and positional data.    
 
@@ -135,7 +135,7 @@ fetch("https://api.weburban.com/image/to-text", requestOptions)
 
 ***
 
-### Image Colour k-Means
+### Image Colour Analysis
 Colours are extracted using k-means analysis and output as RGB values, with their frequency. This analysis will provide a summary of `k` colours in an image. 
 
 ::: tip Parameters

@@ -6,9 +6,63 @@ outline: deep
 
 The following API endpoints generate text based on input. 
 
+
 ***
 
-### Generate new text from trained text using ngrams.
+### Natural Language Chat
+
+Send natural language text to this endpoint for a text response back based on general intelligence.         
+
+::: tip Parameters
+`endpoint` : https://api.weburban.com/generate/text-from-text     
+`prompt` : (text) The text prompt you want to send           
+:::
+
+Example of how this would be implemented in shown below.     
+
+::: code-group
+
+```js [curl]
+curl --location 'https://api.weburban.com/generate/text-from-text' \
+--header 'Accept: application/json' \
+--header 'x-api-key: <API Key>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "prompt" : "How do I cook an egg?"
+}'
+```
+
+```js [Javascript]
+var myHeaders = new Headers();
+myHeaders.append("Accept", "application/json");
+myHeaders.append("x-api-key", "<API Key>");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "prompt" : "How do I cook an egg?"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.weburban.com/generate/text-from-text", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+:::
+
+
+
+
+
+***
+
+### Generate new text from document
 
 Create a new text arrangement from ngrams of an existing text document. The new generated text draws from logical arrangements in the provided text document.         
 
@@ -72,3 +126,8 @@ Your `text` response will be different to the one shown below because the concat
     }
 }
 ```
+
+
+
+
+
