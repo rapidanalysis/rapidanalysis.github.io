@@ -6,10 +6,6 @@ outline: deep
 
 A rapid pitch deck designed to be performed in 2 minutes. 
 
-### Screenshot
-
-![Screenshot](screenshot.png "Screenshot")
-
 ### Files
 
 ::: info PDF Format
