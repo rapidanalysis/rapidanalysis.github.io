@@ -1,40 +1,72 @@
 <html>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 16px;
+            font-size: 14px;
+        }
+        input {
+            padding: 8px;            
+            margin: 4px;
+        }
+        div {
+            padding: 8px;
+            margin: 4px;  
+            display: block;          
+        }
+        div div {
+            display: inline-block
+        }
+        #me {
+            background-color: rgb(232, 242, 232);
+        }
+        #bot {
+            background-color: rgb(218, 235, 239);
+        }
+    </style>
     <body>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script type="application/javascript">
-        function callapi() {
+        function callapi(comment) {
+            prompt(comment, 'me')
             const config = {
                 headers:{
                     'Content-Type': 'application/json'
                 }
             }
+
+            // const q = { "data": [[2,1], [2,2], [2,3], [2,4], [2,5], [2,6]], "labels": [2,4,6,8,10,12], "predict": [[2, 7]], "regression" : "linear" }
+            const q = { "prompt" : comment }
             const url = "https://api.weburban.com/generate/text-from-text";
-            const json = JSON.stringify({ "prompt" : "How do you cook eggs"});
-            const data = { 'body' : json }
+            const json = JSON.stringify(q);
 
             axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
             console.log(document.getElementById("token").value)
             
-            axios.post(url, data, config)
+            axios.post(url, json, config)
                 .then(response => {
                     console.log(response.data);
+                    const botSaid = response.data["recognised"];
+                    prompt(botSaid, "bot");
             })
             .catch(error => console.error(error));
         }
-        function sendChat() {
+
+        function prompt(comment, id) {
             const chatText = document.getElementById("chatText");
             const newDiv = document.createElement("div");
-            const text = document.createTextNode("Prompt: " + chatText.value);
+            newDiv.id = id
+            const text = document.createTextNode(id + " : " + comment);
             newDiv.appendChild(text);
             var chatList = document.getElementById("chatList");
             chatList.appendChild(newDiv)
-            callapi()
         }
+
         </script>
-        <input id="token" type="text" placeholder="token">
+        <input id="token" type="text" placeholder="token"><br /><br />
         Type a question: <br />
         <input id="chatText" type="text" placeholder="Prompt text here...">
-        <button type="submit" onclick="sendChat()">Send</button>
+        <button type="button" onclick="callapi( document.getElementById('chatText').value, 'me' )">Send</button>
         <div id="chatList"></div>
     </body>
 </html>
