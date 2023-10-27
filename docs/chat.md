@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 <html>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -36,5 +40,5 @@
     <input id="chatText" type="text" placeholder="Prompt text here...">
     <button type="submit" onclick="sendChat()">Send</button>
     <div id="chatList"></div>
-    
+
 </html>
