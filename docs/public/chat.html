@@ -5,15 +5,16 @@
         function callapi() {
             const config = {
                 headers:{
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json',
-                    'x-api-key' : 'B5Sj43U8nhIJjZXgDYEfMWoXtBnIIZWJqnbU3RnrkF5UKTPFlF'
+                    'Content-Type': 'application/json'
                 }
             }
             const url = "https://api.weburban.com/generate/text-from-text";
-            const json = JSON.stringify({ "prompt" : "How do you cook eggs?"});
+            const json = JSON.stringify({ "prompt" : "How do you cook eggs"});
             const data = { 'body' : json }
-        
+
+            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
+            console.log(document.getElementById("token").value)
+            
             axios.post(url, data, config)
                 .then(response => {
                     console.log(response.data);
@@ -30,7 +31,7 @@
             callapi()
         }
         </script>
-                
+        <input id="token" type="text" placeholder="token">
         Type a question: <br />
         <input id="chatText" type="text" placeholder="Prompt text here...">
         <button type="submit" onclick="sendChat()">Send</button>
