@@ -1,0 +1,76 @@
+<html>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 16px;
+            font-size: 14px;
+        }
+        input {
+            padding: 8px;            
+            margin: 4px;
+        }
+        div {
+            padding: 8px;
+            margin: 4px;  
+            display: block;          
+        }
+        #me {
+            background-color: rgb(232, 242, 232);
+        }
+        #bot {
+            background-color: rgb(218, 235, 239);
+        }
+        #error {
+            background-color: rgb(237, 143, 143);
+        }
+    </style>
+    <body>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="application/javascript">
+        function callapi(comment) {
+            prompt(comment, 'me')
+            const config = {
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            }
+            
+            const q = { "imageID": comment, "categoryID": "main_category_model" }
+            const url = "https://f2naqu1tgl.execute-api.ap-southeast-2.amazonaws.com/v1";
+            const json = JSON.stringify(q);
+
+            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
+            console.log(document.getElementById("token").value)
+            
+            axios.post(url, json, config)
+                .then(response => {
+                    console.log(response.data);
+                    const botSaid = response.data["recognised"];
+                    prompt(botSaid, "bot");
+            })
+            .catch(error => {
+                console.error(error);
+                prompt(error, "error, server may be warming up");
+            });
+        }
+
+        function prompt(comment, id) {
+            const chatText = document.getElementById("chatText");
+            const newDiv = document.createElement("div");
+            newDiv.id = id
+            const text = document.createTextNode(id + " : " + comment);
+            newDiv.appendChild(text);
+            var chatList = document.getElementById("chatList");
+            chatList.appendChild(newDiv)
+        }
+
+        </script>
+        <input id="token" type="text" placeholder="token"><br /><br />
+        Type a question: <br />
+        <input id="chatText" type="text" placeholder="Prompt text here...">
+        <button type="button" onclick="callapi( document.getElementById('chatText').value, 'me' )">Send</button>
+        <div id="chatList"></div>
+    </body>
+</html>
+
+
