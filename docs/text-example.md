@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Example
+# Text API Example
 
 ### Academic Abstract Analysis
 

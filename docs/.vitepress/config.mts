@@ -24,6 +24,7 @@ export default defineConfig({
           { text: 'Your API Key', link: '/getting-started#your-api-key' },
           { text: 'Getting Started', link: '/getting-started#getting-started' },
           { text: 'API Examples', link: '/getting-started#api-examples' },
+          { text: 'Text API Example', link: '/text-example' },
           { text: 'Business Use Cases', link: '/business-examples' }
         ]
       },
