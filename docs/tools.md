@@ -4,6 +4,15 @@ outline: deep
 
 # RapidAnalysis Google Sheets Add-On
 
+Instructions for getting started with RapidAnalysis custom functions for Google Sheets Add-on.
+
+::: warning Before you start
+Make sure you have an API key by registering. It is free and easy to register. Just go here:
+https://rapidanalysis.github.io/getting-started.html#create-an-account-and-sign-in
+
+Once you have your API key, activate the Add-on by going into Extensions > RapidAnalysis > Api Key and paste your key into the box.
+:::
+
 ### Chat with our LLM using questions in cells
 
 `RAPID_CHAT('TEXT')`
