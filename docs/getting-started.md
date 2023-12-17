@@ -10,19 +10,10 @@ import { onMounted } from 'vue';
 const logoutUri = "logout?client_id=7mj6g74m7h9q5m127ehtnlo3m0&logout_uri="
 const loginUri = "login?client_id=7mj6g74m7h9q5m127ehtnlo3m0&response_type=token&redirect_uri="
 
-function configureAuthButton(inOrOut) {  
-  var link = "https://rapid.auth.ap-southeast-2.amazoncognito.com/"
-  link = link + inOrOut
-  link = link + encodeURIComponent(window.location.origin)
-  link = link + encodeURIComponent("/getting-started.html")
-  const apiKeyButton = document.getElementById("apiKeyLoginButton");
-  apiKeyButton.href = link
-}
-
 onMounted(() => {
   const apiKeyButton = document.getElementById("apiKeyLoginButton");
   apiKeyButton.innerText = "Sign In or Register Here";
-  configureAuthButton(loginUri)
+  apiAction();
 });
 
 watchEffect(() => {  
@@ -44,17 +35,45 @@ watchEffect(() => {
 
     axios.post(url, data, config)
     .then(response => {
-        const jsonApiKey = JSON.parse(response.data.body)
-        const apiKey = jsonApiKey["Output"]["apikey"]        
-        const apiKeyEmail = jsonApiKey["Output"]["email"]        
-        const apiKeyId = document.getElementById("apiKey");
-        const apiKeyButton = document.getElementById("apiKeyLoginButton");        
-        apiKeyId.innerText = "API KEY: " + apiKey;
-        apiKeyButton.innerText = "Sign Out " + apiKeyEmail;
-        configureAuthButton(logoutUri)
+        const jsonApiKey = JSON.parse(response.data.body);
+        const apiKey = jsonApiKey["Output"]["apikey"];   
+        const apiKeyEmail = jsonApiKey["Output"]["email"];
+        // Set Local Storage
+        localStorage.setItem("apiKey", apiKey);
+        localStorage.setItem("apiKeyEmail", apiKeyEmail);
+        apiAction();
     }).catch(error => console.error(error));
     } 
 });
+
+function apiAction() {
+  const apiKey = localStorage.getItem("apiKey");
+  const apiKeyEmail = localStorage.getItem("apiKeyEmail");
+  const apiKeyId = document.getElementById("apiKey");
+  apiKeyId.innerText = "API KEY: " + (apiKey == null ? '(Sign In for API Key)' : apiKey);
+  const apiKeyButton = document.getElementById("apiKeyLoginButton");
+  var link = "https://rapid.auth.ap-southeast-2.amazoncognito.com/"
+
+  if( apiKey != null) {    
+    link = link + logoutUri
+    apiKeyButton.innerText = "Sign Out " + apiKeyEmail;
+    apiKeyButton.onclick = removeLocalStorage;
+  } else {
+    link = link + loginUri
+    apiKeyButton.innerText = "Sign In or Register Here";
+    apiKeyButton.onclick = null;
+  }
+  
+  link = link + encodeURIComponent(window.location.origin)
+  link = link + encodeURIComponent("/getting-started.html")
+  apiKeyButton.href = link
+}
+
+function removeLocalStorage() {
+  localStorage.removeItem("apiKey"); 
+  localStorage.removeItem("apiKeyEmail");
+}
+
 </script>
 <!-- <button @click="callapi">Test Button</button> -->
 

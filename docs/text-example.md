@@ -13,7 +13,14 @@ Copy your API Token and pase it below to get started. Then press the green Analy
 :::
 
 <script setup>
+import { onMounted } from 'vue';
 import axios from "axios";
+
+onMounted(() => {
+  const tokenField = document.getElementById("token");
+  const apiKey = localStorage.getItem("apiKey");
+  tokenField.value = apiKey != null ? apiKey : '' ;  
+});
 
 function summarise(description, comment) {
             const config = {
@@ -153,7 +160,14 @@ function callapi() {
 }
 </script>
 
-<input style='border-style: solid; color: white; background: #cccccc; padding: 1pt 10pt 1pt 10pt ' id="token" type="text" label='Token' placeholder="Paste token here" value="">
+<input style='
+border-style: solid; 
+color: black; 
+background: #eeeeee;
+width: 300px;
+border-radius:8px;
+padding: 1pt 10pt 1pt 10pt 
+' id="token" type="text" label='Token' placeholder="Paste token here" value="">
         
 ### Abstract A
 
@@ -163,7 +177,12 @@ function callapi() {
 
 <textarea id="abstract_b" name="abstract_b" rows="4" cols="80">Recent studies matching eye gaze patterns with those of others contain research that is heavily reliant on string editing methods borrowed from early work in bioinformatics. Previous studies have shown string editing methods to be susceptible to false negative results when matching mutated genes or unordered regions of interest in scanpaths. Even as new methods have emerged for matching amino acids using novel combinatorial techniques, scanpath matching is still limited by a traditional collinear approach. This approach reduces the ability to discriminate between free viewing scanpaths of two people looking at the same stimulus due to the heavy weight placed on linearity. To overcome this limitation, we here introduce a new method called SoftMatch to compare pairs of scanpaths. SoftMatch diverges from traditional scanpath matching in two different ways: firstly, by preserving locality using fractal curves to reduce dimensionality from 2D Cartesian (x,y) coordinates into 1D (h) Hilbert distances, and secondly by taking a combinatorial approach to fixation matching using discrete Fréchet distance measurements between segments of scanpath fixation sequences. These matching “sequences of fixations over time” are a loose acronym for SoftMatch. Results indicate high degrees of statistical and substantive significance when scoring matches between scanpaths made during free-form viewing of unfamiliar stimuli. Applications of this method can be used to better understand bottom up perceptual processes extending to scanpath outlier detection, expertise analysis, pathological screening, and salience prediction.</textarea>
 
-<button style="border-radius: 8px; color: white; background: green; padding: 1pt 10pt 1pt 10pt " @click="callapi">Analyse and Compare</button>
+<button style="
+border-radius: 8px; 
+color: white; 
+background: green; 
+padding: 1pt 10pt 1pt 10pt 
+" @click="callapi">Analyse and Compare</button>
 
 <hr/>
 
