@@ -31,6 +31,8 @@ request(options, function (error, response) {
 ```
 :::
 
+### GO Native API code
+
 The API is language agnostic and can be called from any language, including Go Native, and shown below. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
 ::: info Go Native code to recognise text in an image
@@ -82,6 +84,8 @@ func main() {
 ```
 :::
 
+### Javascript Fetch Request
+
 Finally, this example shows how the call can be made using a Javascript fetch request. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
 ```js{4}
@@ -106,6 +110,8 @@ fetch("https://api.weburban.com/image/to-text", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+### Sample Response 
 
 The response from the server will always be a JSON object. An example of a response is shown below. 
 
