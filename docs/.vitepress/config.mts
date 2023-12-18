@@ -28,6 +28,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'RapidAnalysis Apps',
+        items: [
+          { text: 'Google Sheets', link: '/tools' },
+          { text: 'Slack', link: '/slack' }
+        ]
+      },
+      {
         text: 'Processing Docs 🚀',
         items: [
           { text: 'Text Processing', link: '/text-processing' },
@@ -36,20 +43,28 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Generation Docs 🦉',
+        text: 'Generation Docs 🤖',
         items: [
-          { text: 'Text Generation', link: '/text-generation' },
-          // { text: 'Image Generation', link: '/image-generation' }
+          { text: 'Text Generation', link: '/text-generation' }
         ]
       },
       {
-        text: 'Edge Hardware 🤖',
+        text: 'Legal 🦉',
         items: [
-          { text: 'Use Cases', link: '/hardware-use-cases' },
-          { text: 'Hardware Setup', link: '/hardware-setup' },
-          { text: 'Hardware API', link: '/hardware-api' }
+          { text: 'Privacy', link: '/hardware-use-cases' },
+          { text: 'Terms of Service', link: '/hardware-setup' },
+          { text: 'Jobs', link: '/jobs' },
         ]
       }
+
+      // {
+      //   text: 'Edge Hardware 🤖',
+      //   items: [
+      //     { text: 'Use Cases', link: '/hardware-use-cases' },
+      //     { text: 'Hardware Setup', link: '/hardware-setup' },
+      //     { text: 'Hardware API', link: '/hardware-api' }
+      //   ]
+      // }
     ],
 
     socialLinks: [

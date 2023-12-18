@@ -2,9 +2,9 @@
 outline: deep
 ---
 
-# RapidAnalysis Google Sheets Add-On
+# Google Sheets Add-On
 
-Instructions for getting started with RapidAnalysis custom functions for Google Sheets Add-on.
+Interface with our ML API endpoints in your Google Sheets easily with this Add-on. Below are instructions for getting started with our custom functions.
 
 ::: warning Before you start
 Make sure you have an API key by registering. It is free and easy to register. Just go here:
