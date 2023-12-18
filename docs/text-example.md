@@ -4,188 +4,124 @@ outline: deep
 
 # Text API Example
 
-### Academic Abstract Analysis
+### API Examples
 
-Below is an example of some of the things you can do using RapidAnalysis ML endpoints on two academic text abstracts.
+The following code will detect text in an image using Node.js to make an API call with a URL pointing to the image. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
-::: warning Token
-Copy your API Token and pase it below to get started. Then press the green Analyse and Compare button below. 
+::: info Node.js code to recognise text in an image 
+```js{10}
+var request = require('request');
+var options = {
+  'method': 'POST',
+  'url': 'https://api.weburban.com/image/to-text',
+  'headers': {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+    'x-api-key': 'xxxxx-xxxxx-xxxxx-xxxxx-xxxxx'
+  },
+  body: JSON.stringify({
+    "imageUrl": "https://www.your-website.com/image.jpg"
+  })
+
+};
+request(options, function (error, response) {
+  if (error) throw new Error(error);
+  console.log(response.body);
+});
+```
 :::
 
-<script setup>
-import { onMounted } from 'vue';
-import axios from "axios";
+The API is language agnostic and can be called from any language, including Go Native, and shown below. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
 
-onMounted(() => {
-  const tokenField = document.getElementById("token");
-  const apiKey = localStorage.getItem("apiKey");
-  tokenField.value = apiKey != null ? apiKey : '' ;  
+::: info Go Native code to recognise text in an image
+```go{29}
+package main
+
+import (
+  "fmt"
+  "strings"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://api.weburban.com/image/to-text"
+  method := "POST"
+
+  payload := strings.NewReader(`{
+    "imageUrl" : "https://www.your-website.com/image.jpg"
+}`)
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  req.Header.Add("Accept", "application/json")
+  req.Header.Add("Content-Type", "application/json")
+  req.Header.Add("x-api-key", "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx")
+
+  res, err := client.Do(req)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  defer res.Body.Close()
+
+  body, err := ioutil.ReadAll(res.Body)
+  if err != nil {
+    fmt.Println(err)
+    return
+  }
+  fmt.Println(string(body))
+}
+```
+:::
+
+Finally, this example shows how the call can be made using a Javascript fetch request. Please note: the `x-api-key` in the line highlighted below is a placeholder for your real key. 
+
+```js{4}
+var myHeaders = new Headers();
+myHeaders.append("Accept", "application/json");
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("x-api-key", "xxxxx-xxxxx-xxxxx-xxxxx-xxxxx");
+
+var raw = JSON.stringify({
+  "imageUrl": "https://www.your-website.com/image.jpg"
 });
 
-function summarise(description, comment) {
-            const config = {
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-            }
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
 
-            const q = { "fulltext" : comment, "percent" : 0.2 }
-            const url = "https://api.weburban.com/text/to-summary";
-            const json = JSON.stringify(q);
+fetch("https://api.weburban.com/image/to-text", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
 
-            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
-            console.log(document.getElementById("token").value)
-            
-            axios.post(url, json, config)
-                .then(response => {
-                    console.log(response.data);
-                    const botSaid = response.data["Output"];
-                    prompt(botSaid, description);
-            })
-            .catch(error => {
-                console.error(error);
-                prompt(error, "error, server call interrupted");
-            });
-        }
+The response from the server will always be a JSON object. An example of a response is shown below. 
 
-        function generate(description, comment) {
-            const config = {
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-            }
-
-            const q = { "url" : comment, "length" : 500 }
-            const url = "https://api.weburban.com/generate/text-from-ngram";
-            const json = JSON.stringify(q);
-
-            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
-            console.log(document.getElementById("token").value)
-            
-            axios.post(url, json, config)
-                .then(response => {
-                    console.log(response.data);
-                    const botSaid = response.data["Output"];
-                    prompt(botSaid, description);
-            })
-            .catch(error => {
-                console.error(error);
-                prompt(error, "error, server call interrupted");
-            });
-        }
-
-        function vector(text1, text2) {
-            const config = {
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-            }
-
-            const q = { "text1" : text1, "text2" : text2, "n_features" : 10 }
-            const url = "https://api.weburban.com/text/to-vector";
-            const json = JSON.stringify(q);
-
-            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
-            console.log(document.getElementById("token").value)
-            
-            axios.post(url, json)
-                .then(response => {
-                    console.log(response.data);
-                    prompt(response.data["Output"]["n_features"], 'Number of vector dimensions');
-                    prompt(response.data["Output"]["text1"], 'Vector Abstract A');
-                    prompt(response.data["Output"]["text2"], 'Vector Abstract B');
-                    prompt(response.data["Output"]["braycurtis_dissimilarity"], 'Bray Curtis Dissimilarity');
-            })
-            .catch(error => {
-                console.error(error);
-                prompt(error, "error, server call interrupted");
-            });            
-        }
-
-        function chatbot(promptEngineering, text) {
-            const config = {
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-            }
-
-            const q = { "prompt" : promptEngineering + " " + text }
-            const url = "https://api.weburban.com/generate/text-from-text";
-            const json = JSON.stringify(q);
-
-            axios.defaults.headers['x-api-key'] = document.getElementById("token").value;
-            console.log(document.getElementById("token").value)
-            
-            axios.post(url, json)
-                .then(response => {
-                    console.log(response.data);
-                    const botSaid = response.data["recognised"];
-                    prompt(botSaid, "LLM Output");                    
-            })
-            .catch(error => {
-                console.error(error);
-                prompt(error, "error, server call interrupted");
-            });            
-        }
-
-        function prompt(comment, id) {            
-            const newDiv = document.createElement("p");
-            newDiv.id = id
-            const text = document.createTextNode(id + " : " + comment);
-            newDiv.appendChild(text);
-            var chatList = document.getElementById("chatList");
-            chatList.appendChild(newDiv)
-        }
-
-        function getText(objName) {
-            return document.getElementById(objName).value
-        }
-
-        function removeAll() {
-            const parent = document.getElementById("chatList")
-            while (parent.firstChild) {
-                parent.firstChild.remove()
-            }
-        }
-
-function callapi() {
-  removeAll();
-  summarise( 'Summarise Abstract A', getText('abstract_a') ); 
-  summarise( 'Summarise Abstract B', getText('abstract_b') ); 
-  generate( 'Generate New Short Abstract A', getText('abstract_a') ); 
-  generate( 'Generate New Short Abstract B', getText('abstract_b') );
-  vector( getText('abstract_a'), getText('abstract_b') );
-  chatbot( 'Describe', getText('abstract_a') );
-  //chatbot( 'Describe', getText('abstract_b') );
+```json
+{
+    "Version": "1.0",
+    "Output": {
+        "text": [
+            "HUMPHREY",
+            "INGRID",
+            "PAUL",
+            "BOGART BERGMAN HENREID"
+        ]
+    }
 }
-</script>
+```
 
-<input style='
-border-style: solid; 
-color: black; 
-background: #eeeeee;
-width: 300px;
-border-radius:8px;
-padding: 1pt 10pt 1pt 10pt 
-' id="token" type="text" label='Token' placeholder="Paste token here" value="">
-        
-### Abstract A
+This JSON response will always contain `Version` and `Output` data. Versions can be targetted for specific legacy algorithms used by the endpoints. Please see detailed documentation for syntax and specifications. 
 
-<textarea id="abstract_a" name="abstract_a" rows="4" cols="80">Outlier scanpaths identification is a crucial preliminary step in designing visual software, digital media analysis, radiology training and clustering participants in eye-tracking experiments. However, the task is challenging due to the visual irregularity of the scanpath shapes and the diﬃculty in dimensionality reduction due to geometric complexity. Conventional approaches have used heat maps to exclude scanpaths that lack a similarity pattern. However, the typically-used packages, such as ScanMatch and MultiMatch often generate discordant results when outlier identification is done empirically. This paper introduces a novel outlier evaluation approach by integrating the fractal dimension (FD), capturing the geometrical complexity of patterns, as an additional parameter with the heat map. This additional parameter is used to evaluate the degree of influence of a scanpath within a dataset. More specifically, the 2D Cartesian coordinates of a scanpath are fitted to a space filling 1D fractal curve to characterise its temporal FD. The FDs of the scanpaths are then compared to match their geometric complexity to one another. The findings indicate that the FD can be a beneficial additional parameter when evaluating the candidacy of poorly matching scanpaths as outliers and performs better at identifying unusual scanpaths than using other methods, including scanpath matching, Jaccard, or bounding box methods alone.</textarea>
-
-### Abstract B
-
-<textarea id="abstract_b" name="abstract_b" rows="4" cols="80">Recent studies matching eye gaze patterns with those of others contain research that is heavily reliant on string editing methods borrowed from early work in bioinformatics. Previous studies have shown string editing methods to be susceptible to false negative results when matching mutated genes or unordered regions of interest in scanpaths. Even as new methods have emerged for matching amino acids using novel combinatorial techniques, scanpath matching is still limited by a traditional collinear approach. This approach reduces the ability to discriminate between free viewing scanpaths of two people looking at the same stimulus due to the heavy weight placed on linearity. To overcome this limitation, we here introduce a new method called SoftMatch to compare pairs of scanpaths. SoftMatch diverges from traditional scanpath matching in two different ways: firstly, by preserving locality using fractal curves to reduce dimensionality from 2D Cartesian (x,y) coordinates into 1D (h) Hilbert distances, and secondly by taking a combinatorial approach to fixation matching using discrete Fréchet distance measurements between segments of scanpath fixation sequences. These matching “sequences of fixations over time” are a loose acronym for SoftMatch. Results indicate high degrees of statistical and substantive significance when scoring matches between scanpaths made during free-form viewing of unfamiliar stimuli. Applications of this method can be used to better understand bottom up perceptual processes extending to scanpath outlier detection, expertise analysis, pathological screening, and salience prediction.</textarea>
-
-<button style="
-border-radius: 8px; 
-color: white; 
-background: green; 
-padding: 1pt 10pt 1pt 10pt 
-" @click="callapi">Analyse and Compare</button>
-
-<hr/>
-
-### Output
-
-<div id="chatList"></div>

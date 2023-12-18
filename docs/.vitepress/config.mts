@@ -20,11 +20,10 @@ export default defineConfig({
       {
         text: 'Start Here',
         items: [
-          { text: 'Register & Sign In', link: '/getting-started#create-an-account-and-sign-in' },
-          { text: 'Your API Key', link: '/getting-started#your-api-key' },
-          { text: 'Getting Started', link: '/getting-started#getting-started' },
-          { text: 'API Examples', link: '/getting-started#api-examples' },
-          { text: 'Text API Example', link: '/text-example' },
+          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'API Examples', link: '/text-example' },
+          { text: 'Example: Chat LLM', link: '/chat' },
+          { text: 'Example: Text Analysis', link: '/academic-analysis' },
           { text: 'Business Use Cases', link: '/business-examples' }
         ]
       },
@@ -40,7 +39,7 @@ export default defineConfig({
         text: 'Generation Docs 🦉',
         items: [
           { text: 'Text Generation', link: '/text-generation' },
-          { text: 'Image Generation', link: '/image-generation' }
+          // { text: 'Image Generation', link: '/image-generation' }
         ]
       },
       {
