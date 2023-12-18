@@ -51,8 +51,8 @@ export default defineConfig({
       {
         text: 'Legal 🦉',
         items: [
-          { text: 'Privacy', link: '/hardware-use-cases' },
-          { text: 'Terms of Service', link: '/hardware-setup' },
+          { text: 'Privacy', link: '/privacy' },
+          { text: 'Terms of Service', link: '/tos' },
           { text: 'Jobs', link: '/jobs' },
         ]
       }
