@@ -36,3 +36,7 @@ Use RAPID_REWORD to word text differently. Pass it a cell containing text from y
 `RAPID_VEC_COMPARE('TEXT1','TEXT2',100)`
 
 Use RAPID_VEC_COMPARE to compare the Bray Curtis vector similarity of two bodies of text. Pass it a cell containing text and another different cell containing text from your spreadsheet along with the number of features you want pulled from them to make a vector comparison. 
+
+### Support
+
+Please contact us for support. We can be reached at info@rapidanalysis.com
