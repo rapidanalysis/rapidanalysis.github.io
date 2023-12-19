@@ -54,6 +54,7 @@ export default defineConfig({
           { text: 'Privacy', link: '/privacy' },
           { text: 'Terms of Service', link: '/tos' },
           { text: 'Jobs', link: '/jobs' },
+          { text: 'Contact Us', link: '/contact' },
         ]
       }
 
