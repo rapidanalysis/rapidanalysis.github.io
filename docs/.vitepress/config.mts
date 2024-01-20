@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
+// npm run docs:dev
+
 export default defineConfig({
   title: "RapidAnalysis",
   description: "API Documentation",
@@ -24,6 +26,7 @@ export default defineConfig({
           { text: 'API Examples', link: '/text-example' },
           { text: 'Example: Chat LLM', link: '/chat' },
           { text: 'Example: Text Analysis', link: '/academic-analysis' },
+          { text: 'Example: PDF Extraction', link: '/pdf-extraction' },
           { text: 'Business Use Cases', link: '/business-examples' }
         ]
       },
