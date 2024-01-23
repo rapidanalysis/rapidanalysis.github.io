@@ -25,6 +25,7 @@ export default defineConfig({
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'API Examples', link: '/text-example' },
           { text: 'Example: Chat LLM', link: '/chat' },
+          { text: 'Example: Chat LLM (with PDF)', link: '/chat-rag' },
           { text: 'Example: Text Analysis', link: '/academic-analysis' },
           { text: 'Example: PDF Extraction', link: '/pdf-extraction' },
           { text: 'Business Use Cases', link: '/business-examples' }
