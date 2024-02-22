@@ -24,7 +24,7 @@ function callapi() {
         }
     }
 
-    const q = { "prompt" : comment, "url" : pdfUrl }    
+    const q = { "prompt" : comment, "text" : pdfUrl }    
     const url = "https://api.weburban.com/generate/text-from-text";
     const json = JSON.stringify(q);
 
@@ -35,7 +35,7 @@ function callapi() {
     axios.post(url, json, config)
         .then(response => {
             console.log(response.data);
-            const botSaid = response.data["recognised"];
+            const botSaid = response.data["output"];
             prompt(botSaid, "bot");
     })
     .catch(error => {
@@ -71,7 +71,7 @@ border-radius:8px;
 padding: 1pt 10pt 1pt 10pt 
 ' id="token" type="text" label='Token' placeholder="Paste API Key here" value="">
 
-URL of PDF for training: <br />
+Text for context: <br />
 
 <input style='
 border-style: solid; 
@@ -80,7 +80,7 @@ background: #eeeeee;
 width: 400px;
 border-radius:8px;
 padding: 1pt 10pt 1pt 10pt 
-' id="pdfUrl" type="text" label='URL' placeholder="Paste URL of PDF here" value="">
+' id="pdfUrl" type="text" label='URL' placeholder="Paste text here" value="">
 
 Type a question: <br />
 

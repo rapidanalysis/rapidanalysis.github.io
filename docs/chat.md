@@ -33,7 +33,7 @@ function callapi() {
     axios.post(url, json, config)
         .then(response => {
             console.log(response.data);
-            const botSaid = response.data["recognised"];
+            const botSaid = response.data["output"];
             prompt(botSaid, "bot");
     })
     .catch(error => {
