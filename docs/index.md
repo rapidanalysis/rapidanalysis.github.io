@@ -29,12 +29,19 @@ features:
     details: Pre-loaded models for tasks like document, data, and text analysis, with a growing model store for specialized needs - adjust the model for your business needs!
   - title: Open to Developers
     icon: 🦑
-    details: Create and share your own private commercial models within the secure network - open source for tailored solutions just for you!
-  - title: Edge Hardware
-    icon: 🤖
-    details: Our hardware based on Intel x86 architecture is accelerated for ML function or can be tweaked to fit your network.
-  - title: Inexpensive pricing
-    icon: 🐈
-    details: Free beta for developers with pricing scheduled to be well below other competing products. 
+    details: Create and share your own private commercial models within the secure network - open source for tailored solutions just for you!  
 ---
 
+<div data-v-f5090ebe="" data-v-d8beba3b="" class="VPFeatures VPHomeFeatures">
+<div data-v-f5090ebe="" class="container"><div data-v-f5090ebe="" class="items">
+
+  <div data-v-f5090ebe="" class="item grid-4"><img src="darius.jpg"></div>
+  <div data-v-f5090ebe="" class="item grid-4"><img src="coral.jpg"></div>
+  <div data-v-f5090ebe="" class="item grid-2"><img src="mSATA.jpg"></div>
+  
+  <!-- <div data-v-f5090ebe="" class="item grid-4">
+  <div data-v-549c013f="" data-v-f5090ebe="" class="VPLink no-icon VPFeature">
+  <article data-v-549c013f="" class="box"></article></div></div> -->
+
+
+</div></div></div>
