@@ -20,7 +20,23 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Start Here',
+        text: 'Hardware',
+        items: [          
+          { text: 'Darius Documentation', link: '/hardware-setup' },
+          { text: 'Darius Peripherals', link: '/hardware-peripherals' },
+          { text: 'Future Projects', link: '/hardware-future-projects' }
+        ]
+      },
+      {
+        text: 'Software',
+        items: [
+          { text: 'Software Setup', link: '/software-setup' },
+          { text: 'Software API', link: '/software-api' },
+          { text: 'Pro Version', link: '/software-pro' }
+        ]
+      },
+      {
+        text: 'Cloud ML',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'API Examples', link: '/text-example' },
@@ -28,48 +44,31 @@ export default defineConfig({
           { text: 'Example: Chat LLM (context)', link: '/chat-rag' },
           { text: 'Example: Text Analysis', link: '/academic-analysis' },
           { text: 'Example: PDF Extraction', link: '/pdf-extraction' },
-          { text: 'Business Use Cases', link: '/business-examples' }
-        ]
-      },
-      {
-        text: 'RapidAnalysis Apps',
-        items: [
-          { text: 'Google Sheets', link: '/tools' },
-          { text: 'Slack', link: '/slack' }
-        ]
-      },
-      {
-        text: 'Processing Docs 🚀',
-        items: [
+          { text: 'Business Use Cases', link: '/business-examples' },
           { text: 'Text Processing', link: '/text-processing' },
           { text: 'Image Processing', link: '/image-processing' },
-          { text: 'Numeric Processing', link: '/numeric-processing' }
-        ]
-      },
-      {
-        text: 'Generation Docs 🤖',
-        items: [
+          { text: 'Numeric Processing', link: '/numeric-processing' },
           { text: 'Text Generation', link: '/text-generation' }
         ]
+      },      
+      {
+        text: '3rd Party Apps',
+        items: [
+          { text: 'On Google Sheets', link: '/tools' },
+          { text: 'On Slack', link: '/slack' },
+          { text: 'On Discord', link: '/discord' }
+        ]
       },
       {
-        text: 'Legal 🦉',
+        text: 'Business 🦉',
         items: [
+          { text: 'Welcome', link: '/welcome' },
           { text: 'Privacy', link: '/privacy' },
           { text: 'Terms of Service', link: '/tos' },
           { text: 'Jobs', link: '/jobs' },
           { text: 'Contact Us', link: '/contact' },
         ]
       }
-
-      // {
-      //   text: 'Edge Hardware 🤖',
-      //   items: [
-      //     { text: 'Use Cases', link: '/hardware-use-cases' },
-      //     { text: 'Hardware Setup', link: '/hardware-setup' },
-      //     { text: 'Hardware API', link: '/hardware-api' }
-      //   ]
-      // }
     ],
 
     socialLinks: [

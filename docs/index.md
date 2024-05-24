@@ -4,35 +4,35 @@ layout: home
 
 hero:
   name: "RapidAnalysis"
-  text: "AI Smart Utilities"
-  tagline: API Documentation and Examples (beta)
+  text: "Your network. \nYour AI."
+  tagline: "Analyse at the speed of local: RapidAnalysis private and secure Network Attached Compute."
   image:
     src: /illustration2.png
     alt: RapidAnalysis
   actions:
     - theme: brand
-      text: Business Cases
+      text: Documentation
       link: /business-examples
     - theme: alt
-      text: API Examples
-      link: /getting-started.html#api-examples
+      text: Check out our Kickstarter!
+      link: http://www.kickstarter.com
 
 features:
-  - title: Image Analysis
+  - title: Privacy & Security First
     icon: 🛠️
-    details: Intergrate your content with our image analysis API tools. New algorithms and methods introduced regularly.
-  - title: Text Analysis
+    details: Your data, your projects, your own network - away and independent from the cloud!
+  - title: Low technical bar of entry
     icon: 🚀
-    details: Whether it's summarisation, embedding analysis, or deep search, we have what works for your text content analysis needs.
-  - title: Number Crunching
+    details: Our hardware is specifically built for machine learning tasks - perform BERT and LLM prompts in 2 seconds!
+  - title: Go Beyond Basics
     icon: 🤓
-    details: Analyse numerical data using our various data analysis tools. Examples and use cases will help you find the best fit for your data.
-  - title: JSON API
+    details: Pre-loaded models for tasks like document, data, and text analysis, with a growing model store for specialized needs - adjust the model for your business needs!
+  - title: Open to Developers
     icon: 🦑
-    details: Libraries, frameworks, and code examples for many languages including Node, Swift, and Python.
+    details: Create and share your own private commercial models within the secure network - open source for tailored solutions just for you!
   - title: Edge Hardware
     icon: 🤖
-    details: Open source examples for integration with edge enabled microprocessors including the ESP32, Raspberry Pi Pico, and Arduin Atmega328.
+    details: Our hardware based on Intel x86 architecture is accelerated for ML function or can be tweaked to fit your network.
   - title: Inexpensive pricing
     icon: 🐈
     details: Free beta for developers with pricing scheduled to be well below other competing products. 
