@@ -32,12 +32,3 @@ features:
     details: Create and share your own private commercial models within the secure network - open source for tailored solutions just for you!  
 ---
 
-<div data-v-f5090ebe="" data-v-d8beba3b="" class="VPFeatures VPHomeFeatures">
-<div data-v-f5090ebe="" class="container">
-<div data-v-f5090ebe="" class="items">
-
-<div data-v-f5090ebe="" class="item grid-4"><img src="/darius.jpg"></div>
-<div data-v-f5090ebe="" class="item grid-4"><img src="/coral.jpg"></div>
-<div data-v-f5090ebe="" class="item grid-2"><img src="/mSATA.jpg"></div>
-
-</div></div></div>

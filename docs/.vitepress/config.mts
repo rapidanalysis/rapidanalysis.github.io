@@ -10,11 +10,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Quick Start', link: '/getting-started#getting-started' }
+      { text: 'Store', link: 'https://store.rapidanalysis.com' }
     ],
 
     footer: {
-      message: 'https://rapidanalysis.github.io',
+      message: 'https://RapidAnalysis.com',
       copyright: 'Copyright © 2023-present Weburban PTY LTD'
     },
 
