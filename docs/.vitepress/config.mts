@@ -22,16 +22,16 @@ export default defineConfig({
       {
         text: 'Hardware',
         items: [          
-          { text: 'Darius Documentation', link: '/hardware-setup' },
-          { text: 'Darius Peripherals', link: '/hardware-peripherals' },
+          { text: 'Documentation', link: '/hardware-setup' },
+          { text: 'Peripherals', link: '/hardware-peripherals' },
           { text: 'Future Projects', link: '/hardware-future-projects' }
         ]
       },
       {
         text: 'Software',
         items: [
-          { text: 'Software Setup', link: '/software-setup' },
-          { text: 'Software API', link: '/software-api' },
+          { text: 'Documentation', link: '/software-setup' },
+          { text: 'Local Cloud API', link: '/software-api' },
           { text: 'Pro Version', link: '/software-pro' }
         ]
       },
