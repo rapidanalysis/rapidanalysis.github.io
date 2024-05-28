@@ -55,8 +55,8 @@ export default defineConfig({
         text: '3rd Party Apps',
         items: [
           { text: 'On Google Sheets', link: '/tools' },
-          { text: 'On Slack', link: '/slack' },
-          { text: 'On Discord', link: '/discord' }
+          { text: 'On Slack', link: 'https://github.com/rapidanalysis/slack' },
+          { text: 'On Discord', link: 'https://github.com/rapidanalysis/discord' }
         ]
       },
       {

@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Documentation
-      link: /business-examples
+      link: /hardware-setup
     - theme: alt
       text: Check out our Kickstarter!
       link: http://www.kickstarter.com
