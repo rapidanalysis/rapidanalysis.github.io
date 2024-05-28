@@ -33,15 +33,19 @@ features:
 ---
 
 <div data-v-f5090ebe="" data-v-d8beba3b="" class="VPFeatures VPHomeFeatures">
-<div data-v-f5090ebe="" class="container"><div data-v-f5090ebe="" class="items">
+<div data-v-f5090ebe="" class="container">
+<div data-v-f5090ebe="" class="items">
 
-  <div data-v-f5090ebe="" class="item grid-4"><img src="darius.jpg"></div>
-  <div data-v-f5090ebe="" class="item grid-4"><img src="coral.jpg"></div>
-  <div data-v-f5090ebe="" class="item grid-2"><img src="mSATA.jpg"></div>
-  
-  <!-- <div data-v-f5090ebe="" class="item grid-4">
-  <div data-v-549c013f="" data-v-f5090ebe="" class="VPLink no-icon VPFeature">
-  <article data-v-549c013f="" class="box"></article></div></div> -->
+<div data-v-f5090ebe="" class="item grid-4">
+<div data-v-549c013f="" data-v-f5090ebe="" class="VPLink no-icon VPFeature">
+<article data-v-549c013f="" class="box"><!--v-if--></article></div></div>
+
+<div data-v-f5090ebe="" class="item grid-4">
+<div data-v-549c013f="" data-v-f5090ebe="" class="VPLink no-icon VPFeature">
+<article data-v-549c013f="" class="box"><!--v-if--></article></div></div>
+
+
+<div data-v-f5090ebe="" class="item grid-4"><div data-v-549c013f="" data-v-f5090ebe="" class="VPLink no-icon VPFeature"><article data-v-549c013f="" class="box"><div data-v-549c013f="" class="icon">🦑</div><h2 data-v-549c013f="" class="title">Open to Developers</h2><p data-v-549c013f="" class="details">Create and share your own private commercial models within the secure network - open source for tailored solutions just for you!</p><!--v-if--></article></div></div>
 
 
 </div></div></div>
