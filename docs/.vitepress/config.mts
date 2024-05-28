@@ -62,7 +62,7 @@ export default defineConfig({
       {
         text: 'Business 🦉',
         items: [
-          { text: 'Welcome', link: '/welcome' },
+          { text: 'About Us', link: '/pitch' },
           { text: 'Privacy', link: '/privacy' },
           { text: 'Terms of Service', link: '/tos' },
           { text: 'Jobs', link: '/jobs' },
