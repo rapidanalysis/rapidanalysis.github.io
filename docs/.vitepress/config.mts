@@ -5,6 +5,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "RapidAnalysis",
+  appearance: "force-dark",
   description: "API Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

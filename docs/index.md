@@ -7,7 +7,7 @@ hero:
   text: "Your network. \nYour AI."
   tagline: "Analyse at the speed of local: RapidAnalysis private and secure Network Attached Compute."
   image:
-    src: /illustration2.png
+    src: /motherboard.png
     alt: RapidAnalysis
   actions:
     - theme: brand
@@ -15,7 +15,7 @@ hero:
       link: /hardware-setup
     - theme: alt
       text: Check out our Kickstarter!
-      link: http://www.kickstarter.com
+      link: https://www.kickstarter.com/projects/weburban/256320149/edit/preview?ref=project_build
 
 features:
   - title: Privacy & Security First
