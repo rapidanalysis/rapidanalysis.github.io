@@ -15,7 +15,7 @@ hero:
       link: /hardware-setup
     - theme: alt
       text: Check out our Kickstarter!
-      link: https://www.kickstarter.com/projects/weburban/256320149/edit/preview?ref=project_build
+      link: https://mailchi.mp/4a0141f50747/rapidanalysis
 
 features:
   - title: Privacy & Security First
