@@ -15,7 +15,7 @@ outline: deep
 Screw holes are M3 and require a minimum 15mm standoff for the RAM mounted on the underside. 
 :::
 
-<img src="ram_underside.jpg" alt="Darius RAM" width="200" />
+<img src="/ram_underside.jpg" alt="Darius RAM" width="200" />
 
 
 ### Image of top side
@@ -23,7 +23,7 @@ Screw holes are M3 and require a minimum 15mm standoff for the RAM mounted on th
 The board is designed to maintain a slim profile. The RapidAnalysis custom case for the Darius is 30mm thick. As long as the attached active cooling fan is not blocked, your own custom cases can reduce this profile significantly. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
-<img src="darius_web.png" alt="Darius" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+<img src="/darius_web.png" alt="Darius" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
 </div>
 
 ### Block Diagram
@@ -31,14 +31,14 @@ The board is designed to maintain a slim profile. The RapidAnalysis custom case 
 Please see the block digram illustrating ports and interfaces below, following the same orientation as the board image above. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
-<img src="block.png" alt="Darius" width="600"  style="display: block; margin-left: auto; margin-right: auto;" />
+<img src="/block.png" alt="Darius" width="600"  style="display: block; margin-left: auto; margin-right: auto;" />
 </div>
 
 ### Pin Specifications
 
 The following pin specifications reference the image below.
 
-<img src="pin_headers.jpg" alt="Darius" width="200"/>
+<img src="/pin_headers.jpg" alt="Darius" width="200"/>
 
 Pin Header (A)
 
