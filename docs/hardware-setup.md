@@ -4,6 +4,25 @@ outline: deep
 
 # Hardware Documentation: Darius
 
+Supports a 64-bit instruction set on Intel® 64 architecture which delivers 64-bit computing on server, workstation, desktop and mobile platforms when combined with supporting software. This Intel 64 architecture improves performance by allowing it to address 8 GB of physical memory.
+
+Supports Intel® Virtualization Technology (VT-x) allows one hardware platform to function as multiple “virtual” platforms. It offers improved manageability by limiting downtime and maintaining productivity by isolating computing activities into separate partitions.
+
+Supports Enhanced Intel SpeedStep® Technology is an advanced means of enabling high performance while meeting the power-conservation needs of mobile systems. Conventional Intel SpeedStep® Technology switches both voltage and frequency in tandem between high and low levels in response to processor load. Enhanced Intel SpeedStep® Technology builds upon that architecture using design strategies such as Separation between Voltage and Frequency Changes, and Clock Partitioning and Recovery.
+
+| Specifications ||
+|-------------|---------|
+| Total Cores | 2       |
+| Total Threads | 2    |
+| Maximum Memory | 8 GB |
+| Memory Type | DDR3L 1333 |
+| Burst Frequency | 2.58 GHz |
+| Base Frequency | 2.16 GHz |
+| Cache | 1 MB L2 Cache |
+| Average Power | 7.5 W |
+| Processor Number | N2840 |
+
+
 ### Measurements and scales
 
 120mm wide    
@@ -34,13 +53,20 @@ Please see the block digram illustrating ports and interfaces below, following t
 <img src="/block.png" alt="Darius" width="600"  style="display: block; margin-left: auto; margin-right: auto;" />
 </div>
 
+### Internal GPU Spec (OpenVino)
+
+Intel® HD Graphics for Intel Atom® Processor Z3700 Series.
+
+
 ### Pin Specifications
 
 The following pin specifications reference the image below.
 
-<img src="/pin_headers.jpg" alt="Darius" width="200"/>
+<img src="/pin_headers.jpg" alt="Darius" width="200"/><br />     
+          
 
-Pin Header (A)
+
+#### Pin Header (A)
 
 | Pin | Definition | 
 |-----|------------|
@@ -55,7 +81,14 @@ Pin Header (A)
 | 9   | Line 2 Left |
 | 10   | Line 2 JD  |
 
-Pin Header (C)
+#### Through Hole (B)
+
+SATA Connector, 1*7 Pin, female socket, DIP, with harpoon board lock.
+
+<img src="/Sata.png" alt="Darius" width="200"/><br />     
+
+
+#### Pin Header (C)
 
 | Pin | Definition | 
 |-----|------------|
@@ -70,7 +103,7 @@ Pin Header (C)
 | 9   | KEY (No Pin)| 
 | 10   | No Connect|
 
-Pin Header (D)
+#### Pin Header (D)
 
 | Pin | Definition | 
 |-----|------------|
@@ -84,3 +117,7 @@ Pin Header (D)
 | 8   | GROUND |
 | 9   | No Connect |
 | 10  | Key (No Pin)|
+
+#### mSATA Connector (E & F)
+
+Stacked mSATA connectors for connecting any 2 mSATA compatible devices. Please see the Peripherals section for more details about compatibility. 

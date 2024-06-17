@@ -8,7 +8,7 @@ The following specifications are a guide for external peripherals you can attach
 
 ### mSATA Specifications
 
-Any standard mSATA drive will fit in a Darius model device.
+Any standard mSATA drive will fit in a Darius model device. The Darius has 2 mSATA ports where one can be stacked vertically on the other. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
 <img src="/mSATA_white.jpg" alt="Darius" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>

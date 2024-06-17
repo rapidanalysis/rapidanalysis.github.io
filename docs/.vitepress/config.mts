@@ -31,9 +31,7 @@ export default defineConfig({
       {
         text: 'Software',
         items: [
-          { text: 'Documentation', link: '/software-setup' },
-          { text: 'Local Cloud API', link: '/software-api' },
-          { text: 'Pro Version', link: '/software-pro' }
+          { text: 'Documentation', link: '/software-setup' }
         ]
       },
       {
