@@ -37,6 +37,53 @@ https://github.com/tensorflow/tensorflow/blob/master/LICENSE
 Python License     
 https://docs.python.org/3/license.html
 
+Docker License
+https://docs.docker.com/subscription/desktop-license/
+
+webmin License
+https://github.com/webmin/webmin/blob/master/LICENCE
+
+CasaOS License
+https://github.com/IceWhaleTech/CasaOS/blob/main/LICENSE
+
+Conda License
+https://docs.conda.io/en/latest/license.html
+
+Kubernetes License
+https://github.com/kubernetes/kubernetes/blob/master/LICENSE
+
+ollama License
+https://github.com/ollama/ollama/blob/main/LICENSE
+
+Open WebUI License
+https://github.com/open-webui/open-webui/blob/main/LICENSE
+
+homepage License
+https://github.com/gethomepage/homepage/blob/main/LICENSE
+
+homarr License
+https://homarr.dev/docs/community/license/
+
+nginx Proxy Manager License
+https://github.com/NginxProxyManager/nginx-proxy-manager/blob/develop/LICENSE
+
+dashy License
+https://github.com/Lissy93/dashy/blob/master/LICENSE
+
+Uptime Kuma
+https://github.com/louislam/uptime-kuma/blob/master/LICENSE
+
+ttyd License
+https://github.com/tsl0922/ttyd/blob/main/LICENSE
+
+Veloren License
+https://github.com/veloren/veloren/blob/master/LICENSE
+
+Segment Anything
+https://github.com/facebookresearch/segment-anything/blob/main/LICENSE
+
+
+
 
 
 
