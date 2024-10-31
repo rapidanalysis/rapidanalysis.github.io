@@ -14,8 +14,8 @@ hero:
       text: Documentation
       link: /hardware-setup
     - theme: alt
-      text: Check out our Kickstarter!
-      link: https://mailchi.mp/4a0141f50747/rapidanalysis
+      text: Amazon Store
+      link: https://www.amazon.com.au/stores/page/F2944BEC-3CF0-4661-9124-EC050E996529?language=en_AU&ref_=cm_sw_r_ud_sf_stores_XFHSD5NBY62N3VVVD0HM
 
 features:
   - title: Privacy & Security First
