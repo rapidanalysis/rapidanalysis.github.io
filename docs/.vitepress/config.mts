@@ -13,8 +13,7 @@ head: [
       `
       !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/553ae2d514d12505e23db428e/f98c639390a91e5a1611f61b3.js");
       `
-    ]
-  ],
+    ],
   title: "RapidAnalysis",
   appearance: "force-dark",
   description: "API Documentation",
