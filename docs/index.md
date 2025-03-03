@@ -14,8 +14,8 @@ hero:
       text: Documentation
       link: /hardware-setup
     - theme: alt
-      text: Store
-      link: https://store.rapidanalysis.com
+      text: Kickstarter!
+      link: https://www.kickstarter.com/projects/1907647187/small-board-big-possibilities-xerxes-pi
 features:
   - title: Privacy & Security First
     icon: 🛠️
