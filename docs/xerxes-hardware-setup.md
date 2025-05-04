@@ -19,6 +19,10 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 * **GPIO**: VCC and Ground Pins, I2C pins for SDA and SCL, Fan Control header pins. (See C)
 * **POE**: Power over Ethernet header pins connect to an optional daughterboard. (See D)
 
+
+
+<a href="https://autode.sk/3ES2eip" target="new"><img src="/xerxes/autodesk.png" alt="Preview" width="400" /></a>
+
 ### 📐 **Form Factor & Physical**
 
 <style>
@@ -27,7 +31,7 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 <table cellspacing="0" cellpadding="0">
 <tr>
-<td><img src="/xerxes/xerxes-size.jpg" alt="Size" width="350" /></td>
+<td><img src="/xerxes/xerxes-size.jpg" alt="Size" width="400" /></td>
 <td>
 
 * **Dimensions**: 120mm × 40mm        
@@ -51,20 +55,35 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 ### 💾 **Storage Options**
 
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="/xerxes/xerxes-back.jpg" alt="Size" width="250" /></td>
+<td>
+
 * **Onboard eMMC** (from compute module)
 * **M.2 slot** (key M for NVMe or SATA SSD)
 * **microSD card slot** (for CM4 or CM5 Lite versions)
+
+</td>
+</tr>
+</table>
+
 
 ### 🔋 **Power**
 
 * **Input Voltage**: 5V DC via USB-C connector
 * **Power Efficiency**: Optimized low-power draw (\~5–8W per module under load)
 
+
+<img src="/xerxes/xerxes-rack.png" alt="Size" width="600" />
+
+
 ### 🔧 **Cluster Integration Features**
 
 * **I2C/GPIO headers** for board management, fan control, or daughter card modules
 * **POE connector** compatibility for integrated POE daughterboard
 * **LED indicators**: Power, Activity, Network status
+* **Rack Enclosures**: Available in 19" and mini-rack sizes, open source and pre-printed
 
 ---
 
