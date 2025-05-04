@@ -21,10 +21,25 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 ### 📐 **Form Factor & Physical**
 
-* **Dimensions**: 120mm × 40mm
+<style>
+    table {border: none;}
+</style>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="/xerxes/xerxes-size.jpg" alt="Size" width="350" /></td>
+<td>
+
+* **Dimensions**: 120mm × 40mm        
+(See comparison to mobile phone left)
 * **Standard**: Fractional Nano-ITX
 * **Mounting**: Aligned for 1U chassis density; side-to-side airflow
 * **Stackable/Array-ready**: Designed to slot into a blade or sled within a dense server chassis
+
+
+</td>
+</tr>
+</table>
 
 ### 🔌 **Connectivity**
 
