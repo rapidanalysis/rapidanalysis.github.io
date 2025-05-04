@@ -33,32 +33,25 @@ head: [
 
     sidebar: [
       {
-        text: 'Hardware',
+        text: 'Xerxes Pi',
         items: [          
-          { text: 'Documentation', link: '/hardware-setup' },
-          { text: 'Peripherals', link: '/hardware-peripherals' },
-          { text: 'Future Projects', link: '/hardware-future-projects' }
+          { text: 'Documentation', link: '/xerxes-hardware-setup' },
+          { text: 'Peripherals', link: '/xerxes-hardware-peripherals' },          
         ]
-      },
+      }, 
       {
-        text: 'Software',
-        items: [
-          { text: 'Documentation', link: '/software-setup' }
+        text: 'Darius Nano-ITX',
+        items: [          
+          { text: 'Documentation', link: '/darius-hardware-setup' },
+          { text: 'Peripherals', link: '/darius-hardware-peripherals' },          
         ]
-      },
+      },     
       {
         text: 'Cloud ML',
         items: [
           { text: 'Getting Started', link: '/getting-started' },
           { text: 'API Examples', link: '/text-example' },
-          { text: 'Example: Chat LLM', link: '/chat' },
-          { text: 'Example: Chat LLM (context)', link: '/chat-rag' },
-          { text: 'Example: Text Analysis', link: '/academic-analysis' },
-          { text: 'Example: PDF Extraction', link: '/pdf-extraction' },
-          { text: 'Business Use Cases', link: '/business-examples' },
-          { text: 'Text Processing', link: '/text-processing' },
-          { text: 'Image Processing', link: '/image-processing' },
-          { text: 'Numeric Processing', link: '/numeric-processing' },
+          { text: 'Processing', link: '/processing' },
           { text: 'Text Generation', link: '/text-generation' }
         ]
       },      

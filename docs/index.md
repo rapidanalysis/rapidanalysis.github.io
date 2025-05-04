@@ -1,18 +1,19 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
+# npm run docs:dev
 layout: home
 
 hero:
   name: "RapidAnalysis"
   text: "Small Boards. \nBig Possibilities."
-  tagline: "Perfect for Small Office and Home Labs.: RapidAnalysis private and secure Network Attached Compute."
+  tagline: "Perfect for Small Office and Home Labs: private and secure high density modular servers."
   image:
-    src: /motherboard.png
+    src: /xerxes/xerxes.png
     alt: RapidAnalysis
   actions:
     - theme: brand
       text: Documentation
-      link: /hardware-setup
+      link: /xerxes-hardware-setup
     - theme: alt
       text: Kickstarter!
       link: https://www.kickstarter.com/projects/1907647187/small-board-big-possibilities-xerxes-pi
