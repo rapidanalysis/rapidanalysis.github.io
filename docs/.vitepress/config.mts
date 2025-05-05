@@ -37,6 +37,7 @@ head: [
         items: [          
           { text: 'Documentation', link: '/xerxes-hardware-setup' },
           { text: 'Peripherals', link: '/xerxes-hardware-peripherals' },          
+          { text: 'Heatsinks, Racks, & Cases', link: '/xerxes-hardware-3d' },          
         ]
       }, 
       {
