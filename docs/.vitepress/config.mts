@@ -41,7 +41,7 @@ head: [
         ]
       }, 
       {
-        text: 'Darius Nano-ITX',
+        text: 'Xerx86 Nano-ITX',
         items: [          
           { text: 'Documentation', link: '/darius-hardware-setup' },
           { text: 'Peripherals', link: '/darius-hardware-peripherals' },          
