@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Hardware Documentation: Darius
+# Hardware Documentation: Xerx86
 
 Supports a 64-bit instruction set on Intel® 64 architecture which delivers 64-bit computing on server, workstation, desktop and mobile platforms when combined with supporting software. This Intel 64 architecture improves performance by allowing it to address 8 GB of physical memory.
 
