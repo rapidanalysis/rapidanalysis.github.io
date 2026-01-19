@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Hardware Peripherals: Darius
+# Hardware Peripherals: Xerx86
 
 The following specifications are a guide for external peripherals you can attach to your Darius device.
 
