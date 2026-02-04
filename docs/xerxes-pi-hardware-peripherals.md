@@ -28,7 +28,7 @@ outline: deep
 * **Signals**:
 
   * 5V, 3.3V power
-  * SPI, I2C, UART
+  * Fan, I2C, UART
   * Ethernet pass-through or GPIO-triggered power control
 * **Optional Features**:
 

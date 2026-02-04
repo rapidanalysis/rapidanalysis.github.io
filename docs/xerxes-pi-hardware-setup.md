@@ -52,7 +52,7 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 
 
-### 💾 **Storage Options**
+### Storage Options
 
 
 | Feature | Details |
@@ -64,7 +64,7 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 
 
-### 🔋 **Power**
+### Power
 
 
 | Feature | Details |
