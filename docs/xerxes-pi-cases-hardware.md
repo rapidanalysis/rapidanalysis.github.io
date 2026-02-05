@@ -2,9 +2,30 @@
 outline: deep
 ---
 
-# Cases
+## Airflow Case
 
-We are committed to trasnparency and open source for all case designs for the Xerxes Pi including our 1U mini rack, single Xerxes Pi enclosure, and full 19" 1U pro rack. All rack designs will be engineered to fit in a typically sized commercial 3D printer. All prints can either be bought by us pre-printed, printed on your own home printer, or printed by any of our print-farm partners. 
+Xerxes Pi single case with vents to help with passive and active cooling. Includes a front plate and end cap. Can be printed without supports if printed separately from front and end caps. 
 
-<img src="/xerxes/rack.jpg" alt="Darius RAM" width="600" />
+<img src="/xerxes/airflow.png" alt="Rack" width="600" />
 
+::: info
+Licence allows for editing so like, edit, and share your designs today! 
+:::
+
+Designed by Lloyd Marshall - available for contract work or customisations.
+lloyd.marshall@rapidanalysis.com 
+
+## Fully Enclosed Case
+
+Xerxes Pi single case fully enclosed to protect internal components from exposure. Pill design with main and end cap. Can be printed without supports if printed separately from front and end caps. 
+
+Four 16mm M2.5 screws secure the Xerxes Pi, Compute Module, Heatsink, and Case together in an innovative captive capsule design. 
+
+<img src="/xerxes/pill.png" alt="Rack" width="600" />
+
+::: info
+Licence allows for editing so like, edit, and share your designs today! 
+:::
+
+Designed by Lloyd Marshall - available for contract work or customisations.
+lloyd.marshall@rapidanalysis.com 
