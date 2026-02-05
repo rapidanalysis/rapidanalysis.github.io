@@ -6,6 +6,14 @@ outline: deep
 
 Supports a 64-bit instruction set on Intel® 64 architecture which delivers 64-bit computing on server, workstation, desktop and mobile platforms when combined with supporting software. This Intel 64 architecture improves performance by allowing it to address 8 GB of physical memory.
 
+<img src="/xerxes/xerx85case.png" alt="Xerx85" />
+
+
+<script setup>
+import RapidButton from './.vitepress/theme/RapidButton.vue'
+</script>
+<RapidButton text="Buy Xerx86" url="https://store.rapidanalysis.com/product/xerx86/" color="#2fb61bff" />
+
 Supports Intel® Virtualization Technology (VT-x) allows one hardware platform to function as multiple “virtual” platforms. It offers improved manageability by limiting downtime and maintaining productivity by isolating computing activities into separate partitions.
 
 Supports Enhanced Intel SpeedStep® Technology is an advanced means of enabling high performance while meeting the power-conservation needs of mobile systems. Conventional Intel SpeedStep® Technology switches both voltage and frequency in tandem between high and low levels in response to processor load. Enhanced Intel SpeedStep® Technology builds upon that architecture using design strategies such as Separation between Voltage and Frequency Changes, and Clock Partitioning and Recovery.

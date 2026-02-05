@@ -29,6 +29,12 @@ License allows you to sell or re-design the 3D mini-racks with attribution to Ra
 Designed by Lloyd Marshall - available for contract work or customisations.
 lloyd.marshall@rapidanalysis.com 
 
+<script setup>
+import RapidButton from './.vitepress/theme/RapidButton.vue'
+</script>
+<RapidButton text="Buy Rack" url="https://store.rapidanalysis.com/product/xerxes-pi-1u-19-inch-full-size-rack/" color="#2fb61bff" />
+
+
 
 ## Mini Rack
 
@@ -43,6 +49,8 @@ License allows you to sell or re-design the 3D mini-racks with attribution to Ra
 Designed by Lloyd Marshall - available for contract work or customisations.
 lloyd.marshall@rapidanalysis.com 
 
+<RapidButton text="Buy Mini Rack" url="https://store.rapidanalysis.com/product/xerxes-pi-1u-19-inch-full-size-rack/" color="#2fb61bff" />
+
 ## Mini Rack Sled
 
 Our mini rack comes in a 6 slot version with room for a Xerxes Pi, Heatsink, and sled or rear Heatsink per slot. 
@@ -52,6 +60,9 @@ License allows you to sell or re-design the 3D mini-racks with attribution to Ra
 :::
 
 <img src="/xerxes/sled.png" alt="Rack" width="600" />
+
+<RapidButton text="Buy Racks" url="https://store.rapidanalysis.com/product/xerxes-pi-1u-19-inch-full-size-rack/" color="#2fb61bff" />
+
 
 The sled provides a mounting hole for the longer M.2 2280 M-Key boards to be securely attached to the Xerxes Pi. 
 

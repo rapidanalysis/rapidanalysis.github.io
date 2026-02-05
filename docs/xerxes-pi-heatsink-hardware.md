@@ -18,6 +18,12 @@ Standard aluminium metal heatsink featuring cross-cut fins to maximise omnidirec
 Screws (shown in the photo above) enter from the bottom (M.2 side) to attach the Xerxes Pi, Compute Module, and Heatsink together. Spacers supplied will ensure equal spacing between the heatsink and compute module. Purchasing higher performance heat conducting pads will improve performance of the heatsink if required. 
 :::
 
+<script setup>
+import RapidButton from './.vitepress/theme/RapidButton.vue'
+</script>
+<RapidButton text="Buy Xerxes Pi" url="https://store.rapidanalysis.com/product/xerxes/" color="#2fb61bff" />
+
+
 ## Metal Fan Heatsink
 
 Metal Pulse Width Modulation (PWM) Fan Active Heatsink. Fan will blow continuously if used with a Raspberry Pi CM4 or Radxa CM5. Fan will blow harder with load on a Raspberry Pi CM5. Connector is standard Raspberry Pi Fan SH male plug. Vertical fins follow the predicted direction of airflow along the long side of the Xerxes Pi. Will work with POE or USB power. 
@@ -27,3 +33,6 @@ Metal Pulse Width Modulation (PWM) Fan Active Heatsink. Fan will blow continuous
 ::: info
 Similar to the cross-cut heatsink (shown two photos above) screws enter from the bottom (M.2 side) to attach the Xerxes Pi, Compute Module, and Heatsink together. Spacers supplied will ensure equal spacing between the heatsink and compute module. Purchasing higher performance heat conducting pads will improve performance of the heatsink if required. 
 :::
+
+
+<RapidButton text="Buy Xerxes Pi" url="https://store.rapidanalysis.com/product/xerxes/" color="#2fb61bff" />

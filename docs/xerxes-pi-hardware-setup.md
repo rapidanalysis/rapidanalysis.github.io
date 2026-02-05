@@ -8,6 +8,11 @@ A high-density server motherboard in a 120 mm × 40 mm form factor designed 
 
 <img src="/xerxes/xerxes_diagram.png" alt="Darius RAM" width="600" />
 
+<script setup>
+import RapidButton from './.vitepress/theme/RapidButton.vue'
+</script>
+<RapidButton text="Buy Xerxes Pi" url="https://store.rapidanalysis.com/product/xerxes/" color="#2fb61bff" />
+
 
 ### Core Compatibility
 
