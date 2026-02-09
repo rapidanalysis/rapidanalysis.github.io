@@ -36,3 +36,15 @@ Similar to the cross-cut heatsink (shown two photos above) screws enter from the
 
 
 <RapidButton text="Buy Xerxes Pi" url="https://store.rapidanalysis.com/product/xerxes/" color="#2fb61bff" />
+
+## Back (M.2) Heatsink
+
+Standard aluminium metal heatsink (also available in Heat Conductive Filament) featuring straight fins to direct airflow between the front and rear. Underside is flat and may not contact all parts of the computer module, requiring adhesive cooling pads (supplied) to facilitate full contact with the heatsink plate. 
+
+<img src="/xerxes/back_heatsink.png" alt="Rack" />
+
+::: info
+Similar to the cross-cut heatsink (shown two photos above) screws enter from the bottom (M.2 side) to attach the Xerxes Pi, Compute Module, and Heatsink together. Spacers supplied will ensure equal spacing between the heatsink and compute module. Purchasing higher performance heat conducting pads will improve performance of the heatsink if required. 
+:::
+
+<RapidButton text="Buy Xerxes Pi" url="https://store.rapidanalysis.com/product/xerxes/" color="#2fb61bff" />
