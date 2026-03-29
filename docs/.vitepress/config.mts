@@ -61,23 +61,15 @@ head: [
         ]
       },
 
-      // {
-      //   text: 'Cloud ML',
-      //   items: [
-      //     { text: 'Getting Started', link: '/getting-started' },
-      //     { text: 'API Examples', link: '/text-example' },
-      //     { text: 'Processing', link: '/processing' },
-      //     { text: 'Text Generation', link: '/text-generation' }
-      //   ]
-      // },      
-      // {
-      //   text: '3rd Party Apps',
-      //   items: [
-      //     { text: 'On Google Sheets', link: '/tools' },
-      //     { text: 'On Slack', link: 'https://github.com/rapidanalysis/slack' },
-      //     { text: 'On Discord', link: 'https://github.com/rapidanalysis/discord' }
-      //   ]
-      // },
+      {
+        text: 'Xerxes Home Lab',
+        items: [          
+          { text: 'Documentation - Mac', link: '/xerxes-home-lab-documentation-mac' },
+          { text: 'Documentation - Windows', link: '/xerxes-home-lab-documentation-windows' },
+          { text: 'Documentation - Linux', link: '/xerxes-home-lab-documentation-linux' },
+          { text: 'Privacy Policy', link: '/xerxes-home-lab-documentation-privacy' },
+        ]
+      },      
 
       {
         text: 'Business',
