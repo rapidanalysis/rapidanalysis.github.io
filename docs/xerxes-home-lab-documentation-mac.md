@@ -14,7 +14,7 @@ __Download the macOS version today for free!__
 
 <!-- <RapidButton text="App Store" url="" color="rgb(70, 70, 70)" /> -->
 
-[![Apple app store](/app.png)](https://www.apple.com)
+[![Apple app store](./app.png)](https://www.apple.com)
 
 ### macOS Menubar app
 
