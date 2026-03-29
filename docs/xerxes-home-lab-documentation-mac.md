@@ -12,7 +12,6 @@ Documentation for the Xerxes Home Lab app.
 
 __Download the macOS version today for free!__
 
-<RapidButton text="App Store" url="https://www.apple.com" color="rgb(70, 70, 70)" />
 [![Apple app store](/app.png)](https://www.apple.com)
 
 ### macOS Menubar app
