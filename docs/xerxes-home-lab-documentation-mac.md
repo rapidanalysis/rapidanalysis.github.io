@@ -14,8 +14,6 @@ __Download the macOS version today for free!__
 
 <RapidButton text="App Store" url="https://www.apple.com" color="rgb(70, 70, 70)" />
 
-<!-- [![Apple app store](./app.png)](https://www.apple.com) -->
-
 ### macOS Menubar app
 
 Discover and manage your network servers effortlessly with a lightweight, high-performance macOS menu bar app designed for speed and simplicity. 
@@ -67,6 +65,4 @@ Requirements include macOS 14.6 or later, access to the local network or VPN for
 
 __Download the macOS version today for free!__
 
-<!-- <RapidButton text="App Store" url="" color="rgb(70, 70, 70)" /> -->
-
-[![Apple app store](app.png)](https://www.apple.com)
+<RapidButton text="App Store" url="" color="rgb(70, 70, 70)" />
