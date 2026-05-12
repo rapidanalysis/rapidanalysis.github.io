@@ -7,14 +7,14 @@ outline: deep
 Each mSATA drive comes optionally pre-installed with Debian Server, a web-based portal for administration, and custom software developed by RapidAnalysis and our partners. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
-<img src="/mSATA_white.jpg" alt="Darius" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+<img src="/mSATA_white.jpg" alt="Xerx86" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
 </div>
 
 ### Basic Debian Server build with Web Based Portal
 
 A pre-installed server with a basic web based portal for building your own home lab or small office solution.
 
-Plug this mSATA drive into your Darius to immediately get started developing or deploying your network software inside your firewall. This drive comes with everything you need to get started. 
+Plug this mSATA drive into your Xerx86 to immediately get started developing or deploying your network software inside your firewall. This drive comes with everything you need to get started. 
 
 ### Machine Learning build with Web Based Portal
 

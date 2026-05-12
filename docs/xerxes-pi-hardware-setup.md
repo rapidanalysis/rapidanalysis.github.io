@@ -6,7 +6,7 @@ outline: deep
 
 A high-density server motherboard in a 120 mm × 40 mm form factor designed for a 1U mini or full sized rack space and compatible with the Raspberry Pi Compute Module tailored for microserver or cluster use. 
 
-<img src="/xerxes/xerxes_diagram.png" alt="Darius RAM" width="600" />
+<img src="/xerxes/xerxes_diagram.png" alt="Xerx86 RAM" width="600" />
 
 <script setup>
 import RapidButton from './.vitepress/theme/RapidButton.vue'

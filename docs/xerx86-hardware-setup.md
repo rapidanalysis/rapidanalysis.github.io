@@ -42,15 +42,15 @@ Supports Enhanced Intel SpeedStep® Technology is an advanced means of enabling 
 Screw holes are M3 and require a minimum 15mm standoff for the RAM mounted on the underside. 
 :::
 
-<img src="/ram_underside.jpg" alt="Darius RAM" width="200" />
+<img src="/ram_underside.jpg" alt="Xerx86 RAM" width="200" />
 
 
 ### Image of top side
 
-The board is designed to maintain a slim profile. The RapidAnalysis custom case for the Darius is 30mm thick. As long as the attached active cooling fan is not blocked, your own custom cases can reduce this profile significantly. 
+The board is designed to maintain a slim profile. The RapidAnalysis custom case for the Xerx86 is 30mm thick. As long as the attached active cooling fan is not blocked, your own custom cases can reduce this profile significantly. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
-<img src="/darius_web.png" alt="Darius" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+<img src="/darius_web.png" alt="Xerx86" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
 </div>
 
 ### Block Diagram
@@ -58,7 +58,7 @@ The board is designed to maintain a slim profile. The RapidAnalysis custom case 
 Please see the block digram illustrating ports and interfaces below, following the same orientation as the board image above. 
 
 <div style="background: #ffffff; padding: 20px; border-radius: 10px;">
-<img src="/block.png" alt="Darius" width="600"  style="display: block; margin-left: auto; margin-right: auto;" />
+<img src="/block.png" alt="Xerx86" width="600"  style="display: block; margin-left: auto; margin-right: auto;" />
 </div>
 
 ### Internal GPU Spec (OpenVino)
@@ -70,7 +70,7 @@ Intel® HD Graphics for Intel Atom® Processor Z3700 Series.
 
 The following pin specifications reference the image below.
 
-<img src="/pin_headers.jpg" alt="Darius" width="200"/><br />     
+<img src="/pin_headers.jpg" alt="Xerx86" width="200"/><br />     
           
 
 
@@ -93,7 +93,7 @@ The following pin specifications reference the image below.
 
 SATA Connector, 1*7 Pin, female socket, DIP, with harpoon board lock.
 
-<img src="/Sata.png" alt="Darius" width="200"/><br />     
+<img src="/Sata.png" alt="Xerx86" width="200"/><br />     
 
 
 #### Pin Header (C)
