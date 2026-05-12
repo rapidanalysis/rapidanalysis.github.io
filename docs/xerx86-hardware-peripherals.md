@@ -29,5 +29,5 @@ The Xerx86 supports up to 8 GB of DDR3L 1333 RAM with a maximum bandwidth of 21.
 
 ### Power Supply
 
-The Xerx86 connects to power using an external 12 Volt 4 Amp Power Supply (12V 4A) with (5.5mm outside and 2.5mm inside) barrel connector. 
+The Xerx86 connects to power using an external 12 Volt 4 Amp Power Supply (12V 4A) with (5.5mm outside and 2.5mm inside) positive tip barrel connector. 
 
